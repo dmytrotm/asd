@@ -1,0 +1,28 @@
+[2025-04-17T12:42:54.871+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-17T12:42:54.930+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: beer_data_processing.create_dim_brewery manual__2025-04-17T12:39:29.171572+00:00 [queued]>
+[2025-04-17T12:42:54.960+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: beer_data_processing.create_dim_brewery manual__2025-04-17T12:39:29.171572+00:00 [queued]>
+[2025-04-17T12:42:54.962+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 6
+[2025-04-17T12:42:55.005+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): create_dim_brewery> on 2025-04-17 12:39:29.171572+00:00
+[2025-04-17T12:42:55.034+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'beer_data_processing', 'create_dim_brewery', 'manual__2025-04-17T12:39:29.171572+00:00', '--job-id', '1030', '--raw', '--subdir', 'DAGS_FOLDER/beer_data_processing_dag.py', '--cfg-path', '/tmp/tmp1_z8wwke']
+[2025-04-17T12:42:55.037+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=7009) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-04-17T12:42:55.038+0000] {standard_task_runner.py:105} INFO - Job 1030: Subtask create_dim_brewery
+[2025-04-17T12:42:55.039+0000] {standard_task_runner.py:72} INFO - Started process 7071 to run task
+[2025-04-17T12:42:55.142+0000] {task_command.py:467} INFO - Running <TaskInstance: beer_data_processing.create_dim_brewery manual__2025-04-17T12:39:29.171572+00:00 [running]> on host a0d0456bae2c
+[2025-04-17T12:42:55.343+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='beer_data_processing' AIRFLOW_CTX_TASK_ID='create_dim_brewery' AIRFLOW_CTX_EXECUTION_DATE='2025-04-17T12:39:29.171572+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-17T12:39:29.171572+00:00'
+[2025-04-17T12:42:55.347+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-17T12:42:55.348+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-17T12:42:55.349+0000] {logging_mixin.py:190} INFO - Current task name:create_dim_brewery state:running start_date:2025-04-17 12:42:54.933224+00:00
+[2025-04-17T12:42:55.350+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing and current dag run status:running
+[2025-04-17T12:42:55.351+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-17T12:42:55.449+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-04-17T12:42:56.131+0000] {logging_mixin.py:190} INFO - Створено датасет dim_brewery з 935 записами
+[2025-04-17T12:42:56.133+0000] {python.py:240} INFO - Done. Returned value was: True
+[2025-04-17T12:42:56.179+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-17T12:42:56.181+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=beer_data_processing, task_id=create_dim_brewery, run_id=manual__2025-04-17T12:39:29.171572+00:00, execution_date=20250417T123929, start_date=20250417T124254, end_date=20250417T124256
+[2025-04-17T12:42:56.233+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-17T12:42:56.234+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-17T12:42:56.236+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing queued_at:2025-04-17 12:39:29.407696+00:00
+[2025-04-17T12:42:56.238+0000] {logging_mixin.py:190} INFO - Task hostname:a0d0456bae2c operator:PythonOperator
+[2025-04-17T12:42:56.303+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-17T12:42:56.367+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-17T12:42:56.372+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

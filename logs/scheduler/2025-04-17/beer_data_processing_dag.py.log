@@ -1,0 +1,560 @@
+[2025-04-17T01:08:25.102+0000] {processor.py:186} INFO - Started process (PID=39490) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T01:08:25.106+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T01:08:25.116+0000] {logging_mixin.py:190} INFO - [2025-04-17T01:08:25.115+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T11:45:03.497+0000] {processor.py:186} INFO - Started process (PID=39919) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T11:45:03.578+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T11:45:03.812+0000] {logging_mixin.py:190} INFO - [2025-04-17T11:45:03.704+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T11:45:36.761+0000] {logging_mixin.py:190} INFO - [2025-04-17T11:45:36.608+0000] {timeout.py:68} ERROR - Process timed out, PID: 39919
+[2025-04-17T11:45:37.111+0000] {logging_mixin.py:190} INFO - [2025-04-17T11:45:36.801+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 14, in <module>
+    from sklearn.preprocessing import MinMaxScaler, RobustScaler
+  File "/home/airflow/.local/lib/python3.12/site-packages/sklearn/__init__.py", line 73, in <module>
+    from .base import clone  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sklearn/base.py", line 19, in <module>
+    from .utils._estimator_html_repr import _HTMLDocumentationLinkMixin, estimator_html_repr
+  File "/home/airflow/.local/lib/python3.12/site-packages/sklearn/utils/__init__.py", line 15, in <module>
+    from ._chunking import gen_batches, gen_even_slices
+  File "/home/airflow/.local/lib/python3.12/site-packages/sklearn/utils/_chunking.py", line 11, in <module>
+    from ._param_validation import Interval, validate_params
+  File "/home/airflow/.local/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 14, in <module>
+    from scipy.sparse import csr_matrix, issparse
+  File "/home/airflow/.local/lib/python3.12/site-packages/scipy/sparse/__init__.py", line 315, in <module>
+    from . import csgraph
+  File "/home/airflow/.local/lib/python3.12/site-packages/scipy/sparse/csgraph/__init__.py", line 187, in <module>
+    from ._laplacian import laplacian
+  File "/home/airflow/.local/lib/python3.12/site-packages/scipy/sparse/csgraph/_laplacian.py", line 7, in <module>
+    from scipy.sparse.linalg import LinearOperator
+  File "/home/airflow/.local/lib/python3.12/site-packages/scipy/sparse/linalg/__init__.py", line 134, in <module>
+    from ._eigen import *
+  File "/home/airflow/.local/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/__init__.py", line 9, in <module>
+    from .arpack import *
+  File "/home/airflow/.local/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/arpack/__init__.py", line 20, in <module>
+    from .arpack import *
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 993, in exec_module
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/beer_data_processing_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.10.5/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.10.5/best-practices.html#reducing-dag-complexity, PID: 39919
+[2025-04-17T11:45:37.261+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T11:45:38.907+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 37.596 seconds
+[2025-04-17T12:08:06.279+0000] {processor.py:186} INFO - Started process (PID=216) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:08:06.282+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:08:06.291+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:08:06.290+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:08:09.220+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:08:09.219+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:08:09.260+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:08:09.650+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:08:09.645+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:08:09.743+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:08:09.742+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 11:00:00+00:00, run_after=2025-04-17 12:00:00+00:00
+[2025-04-17T12:08:09.892+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 3.632 seconds
+[2025-04-17T12:10:41.534+0000] {processor.py:186} INFO - Started process (PID=867) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:10:41.555+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:10:41.625+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:10:41.620+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:10:52.011+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:10:51.935+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:10:53.019+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:10:59.192+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:10:58.626+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:11:13.934+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:11:13.932+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:11:15.113+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 33.829 seconds
+[2025-04-17T12:15:39.029+0000] {processor.py:186} INFO - Started process (PID=1027) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:15:39.032+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:15:39.035+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:39.034+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:15:41.267+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.266+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:15:41.296+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:15:41.334+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.333+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'load_data', 'Run Id': 'scheduled__2025-04-17T11:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:41.407+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:15:41.408+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:12:45.746949+00:00 end:2025-04-17 12:15:41.406147+00:00 duration:175.659198
+[2025-04-17T12:15:41.409+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): load_data> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 11:00:00+00:00: scheduled__2025-04-17T11:00:00+00:00, state:running, queued_at: 2025-04-17 12:08:10.483491+00:00. externally triggered: False>
+[2025-04-17T12:15:41.410+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'load_data', 'Run Id': 'scheduled__2025-04-17T11:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:41.411+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.411+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=load_data, run_id=scheduled__2025-04-17T11:00:00+00:00, execution_date=20250417T110000, start_date=20250417T121245, end_date=20250417T121541
+[2025-04-17T12:15:41.473+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.473+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.load_data scheduled__2025-04-17T11:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:15:41.478+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.478+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_min_max', 'Run Id': 'scheduled__2025-04-17T02:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:41.502+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:15:41.503+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:12:16.225571+00:00 end:2025-04-17 12:15:41.501607+00:00 duration:205.276036
+[2025-04-17T12:15:41.504+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_min_max> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 02:00:00+00:00: scheduled__2025-04-17T02:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:03.845239+00:00. externally triggered: False>
+[2025-04-17T12:15:41.505+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_min_max', 'Run Id': 'scheduled__2025-04-17T02:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:41.506+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.506+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_min_max, run_id=scheduled__2025-04-17T02:00:00+00:00, execution_date=20250417T020000, start_date=20250417T121216, end_date=20250417T121541
+[2025-04-17T12:15:41.539+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.538+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_min_max scheduled__2025-04-17T02:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:15:41.549+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.548+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_robust_scaler', 'Run Id': 'scheduled__2025-04-17T02:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:41.576+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:15:41.577+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:12:45.758143+00:00 end:2025-04-17 12:15:41.575581+00:00 duration:175.817438
+[2025-04-17T12:15:41.578+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_robust_scaler> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 02:00:00+00:00: scheduled__2025-04-17T02:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:03.845239+00:00. externally triggered: False>
+[2025-04-17T12:15:41.578+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_robust_scaler', 'Run Id': 'scheduled__2025-04-17T02:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:41.579+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.579+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_robust_scaler, run_id=scheduled__2025-04-17T02:00:00+00:00, execution_date=20250417T020000, start_date=20250417T121245, end_date=20250417T121541
+[2025-04-17T12:15:41.606+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.605+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_robust_scaler scheduled__2025-04-17T02:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:15:41.612+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.612+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T02:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:41.638+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:15:41.639+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:12:45.790341+00:00 end:2025-04-17 12:15:41.637506+00:00 duration:175.847165
+[2025-04-17T12:15:41.640+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_proportions> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 02:00:00+00:00: scheduled__2025-04-17T02:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:03.845239+00:00. externally triggered: False>
+[2025-04-17T12:15:41.641+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T02:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:41.642+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.641+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_proportions, run_id=scheduled__2025-04-17T02:00:00+00:00, execution_date=20250417T020000, start_date=20250417T121245, end_date=20250417T121541
+[2025-04-17T12:15:41.669+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.669+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_proportions scheduled__2025-04-17T02:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:15:41.675+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.674+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_min_max', 'Run Id': 'scheduled__2025-04-17T03:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:41.700+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:15:41.701+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:12:45.784727+00:00 end:2025-04-17 12:15:41.699572+00:00 duration:175.914845
+[2025-04-17T12:15:41.702+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_min_max> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 03:00:00+00:00: scheduled__2025-04-17T03:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:07.227813+00:00. externally triggered: False>
+[2025-04-17T12:15:41.703+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_min_max', 'Run Id': 'scheduled__2025-04-17T03:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:41.705+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.705+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_min_max, run_id=scheduled__2025-04-17T03:00:00+00:00, execution_date=20250417T030000, start_date=20250417T121245, end_date=20250417T121541
+[2025-04-17T12:15:41.727+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.726+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_min_max scheduled__2025-04-17T03:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:15:41.732+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.731+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_min_max', 'Run Id': 'scheduled__2025-04-17T05:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:41.752+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:15:41.753+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:12:16.232735+00:00 end:2025-04-17 12:15:41.752157+00:00 duration:205.519422
+[2025-04-17T12:15:41.755+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_min_max> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 05:00:00+00:00: scheduled__2025-04-17T05:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:11.494718+00:00. externally triggered: False>
+[2025-04-17T12:15:41.755+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_min_max', 'Run Id': 'scheduled__2025-04-17T05:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:41.757+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.756+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_min_max, run_id=scheduled__2025-04-17T05:00:00+00:00, execution_date=20250417T050000, start_date=20250417T121216, end_date=20250417T121541
+[2025-04-17T12:15:41.784+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.783+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_min_max scheduled__2025-04-17T05:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:15:41.790+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.790+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_min_max', 'Run Id': 'scheduled__2025-04-17T06:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:41.815+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:15:41.816+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:12:16.694503+00:00 end:2025-04-17 12:15:41.814396+00:00 duration:205.119893
+[2025-04-17T12:15:41.817+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_min_max> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 06:00:00+00:00: scheduled__2025-04-17T06:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:12.377924+00:00. externally triggered: False>
+[2025-04-17T12:15:41.818+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_min_max', 'Run Id': 'scheduled__2025-04-17T06:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:41.820+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.819+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_min_max, run_id=scheduled__2025-04-17T06:00:00+00:00, execution_date=20250417T060000, start_date=20250417T121216, end_date=20250417T121541
+[2025-04-17T12:15:41.846+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.846+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_min_max scheduled__2025-04-17T06:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:15:41.853+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.853+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_robust_scaler', 'Run Id': 'scheduled__2025-04-17T06:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:41.882+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:15:41.885+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:12:45.834882+00:00 end:2025-04-17 12:15:41.881613+00:00 duration:176.046731
+[2025-04-17T12:15:41.887+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_robust_scaler> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 06:00:00+00:00: scheduled__2025-04-17T06:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:12.377924+00:00. externally triggered: False>
+[2025-04-17T12:15:41.888+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_robust_scaler', 'Run Id': 'scheduled__2025-04-17T06:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:41.891+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.890+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_robust_scaler, run_id=scheduled__2025-04-17T06:00:00+00:00, execution_date=20250417T060000, start_date=20250417T121245, end_date=20250417T121541
+[2025-04-17T12:15:41.927+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.926+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_robust_scaler scheduled__2025-04-17T06:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:15:41.933+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.932+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T04:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:41.957+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:15:41.958+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:12:45.739482+00:00 end:2025-04-17 12:15:41.956334+00:00 duration:176.216852
+[2025-04-17T12:15:41.959+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_proportions> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 04:00:00+00:00: scheduled__2025-04-17T04:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:09.219510+00:00. externally triggered: False>
+[2025-04-17T12:15:41.960+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T04:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:41.962+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.961+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_proportions, run_id=scheduled__2025-04-17T04:00:00+00:00, execution_date=20250417T040000, start_date=20250417T121245, end_date=20250417T121541
+[2025-04-17T12:15:41.996+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:41.995+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_proportions scheduled__2025-04-17T04:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:15:42.003+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:42.002+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_robust_scaler', 'Run Id': 'scheduled__2025-04-17T04:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:42.031+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:15:42.032+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:12:45.741254+00:00 end:2025-04-17 12:15:42.030345+00:00 duration:176.289091
+[2025-04-17T12:15:42.033+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_robust_scaler> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 04:00:00+00:00: scheduled__2025-04-17T04:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:09.219510+00:00. externally triggered: False>
+[2025-04-17T12:15:42.034+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_robust_scaler', 'Run Id': 'scheduled__2025-04-17T04:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:42.036+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:42.036+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_robust_scaler, run_id=scheduled__2025-04-17T04:00:00+00:00, execution_date=20250417T040000, start_date=20250417T121245, end_date=20250417T121542
+[2025-04-17T12:15:42.066+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:42.065+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_robust_scaler scheduled__2025-04-17T04:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:15:42.074+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:42.073+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_min_max', 'Run Id': 'scheduled__2025-04-17T04:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:42.100+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:15:42.103+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:12:16.442923+00:00 end:2025-04-17 12:15:42.099844+00:00 duration:205.656921
+[2025-04-17T12:15:42.104+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_min_max> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 04:00:00+00:00: scheduled__2025-04-17T04:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:09.219510+00:00. externally triggered: False>
+[2025-04-17T12:15:42.105+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_min_max', 'Run Id': 'scheduled__2025-04-17T04:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:42.107+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:42.107+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_min_max, run_id=scheduled__2025-04-17T04:00:00+00:00, execution_date=20250417T040000, start_date=20250417T121216, end_date=20250417T121542
+[2025-04-17T12:15:42.134+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:42.134+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_min_max scheduled__2025-04-17T04:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:15:42.140+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:42.139+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_robust_scaler', 'Run Id': 'scheduled__2025-04-17T05:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:42.162+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:15:42.163+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:12:16.256536+00:00 end:2025-04-17 12:15:42.162364+00:00 duration:205.905828
+[2025-04-17T12:15:42.165+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_robust_scaler> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 05:00:00+00:00: scheduled__2025-04-17T05:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:11.494718+00:00. externally triggered: False>
+[2025-04-17T12:15:42.166+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_robust_scaler', 'Run Id': 'scheduled__2025-04-17T05:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:42.168+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:42.168+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_robust_scaler, run_id=scheduled__2025-04-17T05:00:00+00:00, execution_date=20250417T050000, start_date=20250417T121216, end_date=20250417T121542
+[2025-04-17T12:15:42.194+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:42.193+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_robust_scaler scheduled__2025-04-17T05:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:15:42.200+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:42.199+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T03:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:42.228+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:15:42.230+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:12:45.732270+00:00 end:2025-04-17 12:15:42.227834+00:00 duration:176.495564
+[2025-04-17T12:15:42.231+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_proportions> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 03:00:00+00:00: scheduled__2025-04-17T03:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:07.227813+00:00. externally triggered: False>
+[2025-04-17T12:15:42.232+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T03:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:15:42.234+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:42.233+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_proportions, run_id=scheduled__2025-04-17T03:00:00+00:00, execution_date=20250417T030000, start_date=20250417T121245, end_date=20250417T121542
+[2025-04-17T12:15:42.264+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:42.263+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_proportions scheduled__2025-04-17T03:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:15:42.298+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:42.297+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:15:42.389+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:15:42.388+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:15:42.456+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 3.439 seconds
+[2025-04-17T12:18:16.532+0000] {processor.py:186} INFO - Started process (PID=1523) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:18:16.537+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:18:16.544+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:16.542+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:18:19.128+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:19.126+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:18:19.232+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:18:19.426+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:19.424+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'create_merged_data', 'Run Id': 'scheduled__2025-04-17T07:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:19.818+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:19.819+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:11.944944+00:00 end:2025-04-17 12:18:19.785979+00:00 duration:127.841035
+[2025-04-17T12:18:19.822+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): create_merged_data> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 07:00:00+00:00: scheduled__2025-04-17T07:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:13.400803+00:00. externally triggered: False>
+[2025-04-17T12:18:19.823+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'create_merged_data', 'Run Id': 'scheduled__2025-04-17T07:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:19.827+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:19.826+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=create_merged_data, run_id=scheduled__2025-04-17T07:00:00+00:00, execution_date=20250417T070000, start_date=20250417T121611, end_date=20250417T121819
+[2025-04-17T12:18:20.115+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:20.114+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.create_merged_data scheduled__2025-04-17T07:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:20.122+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:20.122+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_min_max', 'Run Id': 'scheduled__2025-04-17T09:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:20.165+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:20.171+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:06.835274+00:00 end:2025-04-17 12:18:20.164356+00:00 duration:133.329082
+[2025-04-17T12:18:20.175+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_min_max> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 09:00:00+00:00: scheduled__2025-04-17T09:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:15.873430+00:00. externally triggered: False>
+[2025-04-17T12:18:20.177+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_min_max', 'Run Id': 'scheduled__2025-04-17T09:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:20.184+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:20.184+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_min_max, run_id=scheduled__2025-04-17T09:00:00+00:00, execution_date=20250417T090000, start_date=20250417T121606, end_date=20250417T121820
+[2025-04-17T12:18:20.259+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:20.258+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_min_max scheduled__2025-04-17T09:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:20.273+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:20.273+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_robust_scaler', 'Run Id': 'scheduled__2025-04-17T09:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:20.314+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:20.316+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:11.912767+00:00 end:2025-04-17 12:18:20.313291+00:00 duration:128.400524
+[2025-04-17T12:18:20.318+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_robust_scaler> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 09:00:00+00:00: scheduled__2025-04-17T09:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:15.873430+00:00. externally triggered: False>
+[2025-04-17T12:18:20.320+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_robust_scaler', 'Run Id': 'scheduled__2025-04-17T09:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:20.322+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:20.321+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_robust_scaler, run_id=scheduled__2025-04-17T09:00:00+00:00, execution_date=20250417T090000, start_date=20250417T121611, end_date=20250417T121820
+[2025-04-17T12:18:20.385+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:20.384+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_robust_scaler scheduled__2025-04-17T09:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:20.393+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:20.393+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T09:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:20.419+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:20.420+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:10.708316+00:00 end:2025-04-17 12:18:20.418973+00:00 duration:129.710657
+[2025-04-17T12:18:20.421+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_proportions> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 09:00:00+00:00: scheduled__2025-04-17T09:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:15.873430+00:00. externally triggered: False>
+[2025-04-17T12:18:20.422+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T09:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:20.424+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:20.423+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_proportions, run_id=scheduled__2025-04-17T09:00:00+00:00, execution_date=20250417T090000, start_date=20250417T121610, end_date=20250417T121820
+[2025-04-17T12:18:20.456+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:20.455+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_proportions scheduled__2025-04-17T09:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:20.461+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:20.461+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_robust_scaler', 'Run Id': 'scheduled__2025-04-17T10:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:20.487+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:20.488+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:06.668879+00:00 end:2025-04-17 12:18:20.486842+00:00 duration:133.817963
+[2025-04-17T12:18:20.489+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_robust_scaler> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 10:00:00+00:00: scheduled__2025-04-17T10:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:17.255119+00:00. externally triggered: False>
+[2025-04-17T12:18:20.490+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_robust_scaler', 'Run Id': 'scheduled__2025-04-17T10:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:20.491+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:20.491+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_robust_scaler, run_id=scheduled__2025-04-17T10:00:00+00:00, execution_date=20250417T100000, start_date=20250417T121606, end_date=20250417T121820
+[2025-04-17T12:18:20.522+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:20.521+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_robust_scaler scheduled__2025-04-17T10:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:20.592+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:20.591+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:18:20.657+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:20.656+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:18:20.710+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 4.204 seconds
+[2025-04-17T12:18:28.272+0000] {processor.py:186} INFO - Started process (PID=1649) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:18:28.286+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:18:28.300+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:28.296+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:18:32.975+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:32.970+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:18:33.137+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:18:33.300+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:33.298+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_min_max', 'Run Id': 'scheduled__2025-04-17T10:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:33.823+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:33.830+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:06.671935+00:00 end:2025-04-17 12:18:33.808351+00:00 duration:147.136416
+[2025-04-17T12:18:33.837+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_min_max> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 10:00:00+00:00: scheduled__2025-04-17T10:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:17.255119+00:00. externally triggered: False>
+[2025-04-17T12:18:33.839+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_min_max', 'Run Id': 'scheduled__2025-04-17T10:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:33.841+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:33.841+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_min_max, run_id=scheduled__2025-04-17T10:00:00+00:00, execution_date=20250417T100000, start_date=20250417T121606, end_date=20250417T121833
+[2025-04-17T12:18:34.117+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:34.116+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_min_max scheduled__2025-04-17T10:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:34.133+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:34.132+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T10:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:34.191+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:34.194+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:10.091873+00:00 end:2025-04-17 12:18:34.190387+00:00 duration:144.098514
+[2025-04-17T12:18:34.197+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_proportions> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 10:00:00+00:00: scheduled__2025-04-17T10:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:17.255119+00:00. externally triggered: False>
+[2025-04-17T12:18:34.207+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T10:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:34.209+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:34.209+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_proportions, run_id=scheduled__2025-04-17T10:00:00+00:00, execution_date=20250417T100000, start_date=20250417T121610, end_date=20250417T121834
+[2025-04-17T12:18:34.290+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:34.279+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_proportions scheduled__2025-04-17T10:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:34.300+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:34.300+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_robust_scaler', 'Run Id': 'scheduled__2025-04-17T08:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:34.362+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:34.365+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:06.668804+00:00 end:2025-04-17 12:18:34.361870+00:00 duration:147.693066
+[2025-04-17T12:18:34.367+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_robust_scaler> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 08:00:00+00:00: scheduled__2025-04-17T08:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:14.474508+00:00. externally triggered: False>
+[2025-04-17T12:18:34.375+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_robust_scaler', 'Run Id': 'scheduled__2025-04-17T08:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:34.378+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:34.378+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_robust_scaler, run_id=scheduled__2025-04-17T08:00:00+00:00, execution_date=20250417T080000, start_date=20250417T121606, end_date=20250417T121834
+[2025-04-17T12:18:34.452+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:34.444+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_robust_scaler scheduled__2025-04-17T08:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:34.460+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:34.460+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_min_max', 'Run Id': 'scheduled__2025-04-17T08:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:34.561+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:34.572+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:06.668658+00:00 end:2025-04-17 12:18:34.560667+00:00 duration:147.892009
+[2025-04-17T12:18:34.573+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_min_max> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 08:00:00+00:00: scheduled__2025-04-17T08:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:14.474508+00:00. externally triggered: False>
+[2025-04-17T12:18:34.574+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_min_max', 'Run Id': 'scheduled__2025-04-17T08:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:34.584+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:34.583+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_min_max, run_id=scheduled__2025-04-17T08:00:00+00:00, execution_date=20250417T080000, start_date=20250417T121606, end_date=20250417T121834
+[2025-04-17T12:18:34.677+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:34.676+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_min_max scheduled__2025-04-17T08:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:34.684+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:34.683+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T06:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:34.757+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:34.770+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:10.524642+00:00 end:2025-04-17 12:18:34.756560+00:00 duration:144.231918
+[2025-04-17T12:18:34.772+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_proportions> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 06:00:00+00:00: scheduled__2025-04-17T06:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:12.377924+00:00. externally triggered: False>
+[2025-04-17T12:18:34.783+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T06:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:34.786+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:34.786+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_proportions, run_id=scheduled__2025-04-17T06:00:00+00:00, execution_date=20250417T060000, start_date=20250417T121610, end_date=20250417T121834
+[2025-04-17T12:18:34.863+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:34.863+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_proportions scheduled__2025-04-17T06:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:34.871+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:34.871+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T08:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:34.928+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:34.931+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:10.548584+00:00 end:2025-04-17 12:18:34.927572+00:00 duration:144.378988
+[2025-04-17T12:18:34.933+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_proportions> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 08:00:00+00:00: scheduled__2025-04-17T08:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:14.474508+00:00. externally triggered: False>
+[2025-04-17T12:18:34.934+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T08:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:34.936+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:34.935+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_proportions, run_id=scheduled__2025-04-17T08:00:00+00:00, execution_date=20250417T080000, start_date=20250417T121610, end_date=20250417T121834
+[2025-04-17T12:18:34.976+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:34.975+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_proportions scheduled__2025-04-17T08:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:34.995+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:34.994+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T05:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:35.134+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:35.152+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:06.669446+00:00 end:2025-04-17 12:18:35.133790+00:00 duration:148.464344
+[2025-04-17T12:18:35.154+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_proportions> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 05:00:00+00:00: scheduled__2025-04-17T05:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:11.494718+00:00. externally triggered: False>
+[2025-04-17T12:18:35.158+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T05:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:35.177+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:35.172+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_proportions, run_id=scheduled__2025-04-17T05:00:00+00:00, execution_date=20250417T050000, start_date=20250417T121606, end_date=20250417T121835
+[2025-04-17T12:18:35.269+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:35.268+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_proportions scheduled__2025-04-17T05:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:35.281+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:35.280+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_robust_scaler', 'Run Id': 'scheduled__2025-04-17T03:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:35.323+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:35.328+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:10.533891+00:00 end:2025-04-17 12:18:35.323190+00:00 duration:144.789299
+[2025-04-17T12:18:35.333+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_robust_scaler> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 03:00:00+00:00: scheduled__2025-04-17T03:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:07.227813+00:00. externally triggered: False>
+[2025-04-17T12:18:35.334+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_robust_scaler', 'Run Id': 'scheduled__2025-04-17T03:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:35.335+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:35.335+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_robust_scaler, run_id=scheduled__2025-04-17T03:00:00+00:00, execution_date=20250417T030000, start_date=20250417T121610, end_date=20250417T121835
+[2025-04-17T12:18:35.400+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:35.399+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_robust_scaler scheduled__2025-04-17T03:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:35.424+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:35.423+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_min_max', 'Run Id': 'scheduled__2025-04-17T10:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:35.476+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:35.483+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:06.671935+00:00 end:2025-04-17 12:18:35.451376+00:00 duration:148.779441
+[2025-04-17T12:18:35.484+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_min_max> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 10:00:00+00:00: scheduled__2025-04-17T10:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:17.255119+00:00. externally triggered: False>
+[2025-04-17T12:18:35.485+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_min_max', 'Run Id': 'scheduled__2025-04-17T10:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:35.492+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:35.491+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_min_max, run_id=scheduled__2025-04-17T10:00:00+00:00, execution_date=20250417T100000, start_date=20250417T121606, end_date=20250417T121835
+[2025-04-17T12:18:35.551+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:35.551+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_min_max scheduled__2025-04-17T10:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:35.573+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:35.572+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T10:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:35.635+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:35.637+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:10.091873+00:00 end:2025-04-17 12:18:35.595838+00:00 duration:145.503965
+[2025-04-17T12:18:35.639+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_proportions> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 10:00:00+00:00: scheduled__2025-04-17T10:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:17.255119+00:00. externally triggered: False>
+[2025-04-17T12:18:35.640+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T10:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:35.642+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:35.642+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_proportions, run_id=scheduled__2025-04-17T10:00:00+00:00, execution_date=20250417T100000, start_date=20250417T121610, end_date=20250417T121835
+[2025-04-17T12:18:35.700+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:35.699+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_proportions scheduled__2025-04-17T10:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:35.708+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:35.707+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_robust_scaler', 'Run Id': 'scheduled__2025-04-17T08:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:35.804+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:35.808+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:06.668804+00:00 end:2025-04-17 12:18:35.744516+00:00 duration:149.075712
+[2025-04-17T12:18:35.812+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_robust_scaler> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 08:00:00+00:00: scheduled__2025-04-17T08:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:14.474508+00:00. externally triggered: False>
+[2025-04-17T12:18:35.829+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_robust_scaler', 'Run Id': 'scheduled__2025-04-17T08:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:35.833+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:35.832+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_robust_scaler, run_id=scheduled__2025-04-17T08:00:00+00:00, execution_date=20250417T080000, start_date=20250417T121606, end_date=20250417T121835
+[2025-04-17T12:18:35.901+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:35.901+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_robust_scaler scheduled__2025-04-17T08:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:35.919+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:35.918+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_min_max', 'Run Id': 'scheduled__2025-04-17T08:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:35.956+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:35.958+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:06.668658+00:00 end:2025-04-17 12:18:35.938445+00:00 duration:149.269787
+[2025-04-17T12:18:35.959+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_min_max> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 08:00:00+00:00: scheduled__2025-04-17T08:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:14.474508+00:00. externally triggered: False>
+[2025-04-17T12:18:35.960+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_min_max', 'Run Id': 'scheduled__2025-04-17T08:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:35.962+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:35.961+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_min_max, run_id=scheduled__2025-04-17T08:00:00+00:00, execution_date=20250417T080000, start_date=20250417T121606, end_date=20250417T121835
+[2025-04-17T12:18:36.029+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:36.029+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_min_max scheduled__2025-04-17T08:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:36.035+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:36.035+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T06:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:36.069+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:36.070+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:10.524642+00:00 end:2025-04-17 12:18:36.045653+00:00 duration:145.521011
+[2025-04-17T12:18:36.072+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_proportions> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 06:00:00+00:00: scheduled__2025-04-17T06:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:12.377924+00:00. externally triggered: False>
+[2025-04-17T12:18:36.074+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T06:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:36.076+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:36.075+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_proportions, run_id=scheduled__2025-04-17T06:00:00+00:00, execution_date=20250417T060000, start_date=20250417T121610, end_date=20250417T121836
+[2025-04-17T12:18:36.121+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:36.120+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_proportions scheduled__2025-04-17T06:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:36.134+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:36.132+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T08:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:36.164+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:36.166+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:10.548584+00:00 end:2025-04-17 12:18:36.142759+00:00 duration:145.594175
+[2025-04-17T12:18:36.168+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_proportions> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 08:00:00+00:00: scheduled__2025-04-17T08:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:14.474508+00:00. externally triggered: False>
+[2025-04-17T12:18:36.169+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T08:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:36.171+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:36.170+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_proportions, run_id=scheduled__2025-04-17T08:00:00+00:00, execution_date=20250417T080000, start_date=20250417T121610, end_date=20250417T121836
+[2025-04-17T12:18:36.200+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:36.199+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_proportions scheduled__2025-04-17T08:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:36.210+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:36.209+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T05:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:36.235+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:36.238+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:06.669446+00:00 end:2025-04-17 12:18:36.217978+00:00 duration:149.548532
+[2025-04-17T12:18:36.240+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_proportions> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 05:00:00+00:00: scheduled__2025-04-17T05:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:11.494718+00:00. externally triggered: False>
+[2025-04-17T12:18:36.242+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_proportions', 'Run Id': 'scheduled__2025-04-17T05:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:36.246+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:36.245+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_proportions, run_id=scheduled__2025-04-17T05:00:00+00:00, execution_date=20250417T050000, start_date=20250417T121606, end_date=20250417T121836
+[2025-04-17T12:18:36.283+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:36.282+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_proportions scheduled__2025-04-17T05:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:36.289+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:36.288+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'process_robust_scaler', 'Run Id': 'scheduled__2025-04-17T03:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:36.331+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:18:36.334+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:16:10.533891+00:00 end:2025-04-17 12:18:36.300884+00:00 duration:145.766993
+[2025-04-17T12:18:36.336+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): process_robust_scaler> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 03:00:00+00:00: scheduled__2025-04-17T03:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:07.227813+00:00. externally triggered: False>
+[2025-04-17T12:18:36.344+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'process_robust_scaler', 'Run Id': 'scheduled__2025-04-17T03:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:18:36.351+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:36.351+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=process_robust_scaler, run_id=scheduled__2025-04-17T03:00:00+00:00, execution_date=20250417T030000, start_date=20250417T121610, end_date=20250417T121836
+[2025-04-17T12:18:36.399+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:36.398+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.process_robust_scaler scheduled__2025-04-17T03:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:18:36.586+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:36.582+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:18:36.719+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:18:36.719+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:18:36.800+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 8.560 seconds
+[2025-04-17T12:19:24.836+0000] {processor.py:186} INFO - Started process (PID=2127) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:19:24.859+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:19:24.867+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:19:24.865+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:19:31.380+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:19:31.379+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:19:31.551+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:19:31.732+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:19:31.727+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:19:31.883+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:19:31.881+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:19:32.128+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 7.429 seconds
+[2025-04-17T12:23:03.589+0000] {processor.py:186} INFO - Started process (PID=2446) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:23:03.608+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:23:03.691+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:23:03.678+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:23:35.790+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:23:34.305+0000] {timeout.py:68} ERROR - Process timed out, PID: 2446
+[2025-04-17T12:24:53.273+0000] {processor.py:186} INFO - Started process (PID=2829) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:24:53.276+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:24:53.280+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:24:53.279+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:24:54.640+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:24:54.639+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:24:54.677+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:24:54.945+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:24:54.944+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:24:54.985+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:24:54.984+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:24:55.029+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 1.770 seconds
+[2025-04-17T12:25:42.838+0000] {processor.py:186} INFO - Started process (PID=3244) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:25:42.844+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:25:42.849+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:25:42.848+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:26:08.817+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:26:08.745+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:26:09.127+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:26:09.396+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:26:09.394+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:26:09.624+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:26:09.624+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:26:09.780+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 27.551 seconds
+[2025-04-17T12:27:56.513+0000] {processor.py:186} INFO - Started process (PID=3387) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:27:56.552+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:27:56.654+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:27:56.627+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:28:04.987+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:28:04.984+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:28:05.230+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:28:05.388+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:28:05.386+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'create_fact_beer_table', 'Run Id': 'scheduled__2025-04-17T06:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:28:05.661+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:28:05.663+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:27:36.709687+00:00 end:2025-04-17 12:28:05.640607+00:00 duration:28.93092
+[2025-04-17T12:28:05.665+0000] {logging_mixin.py:190} INFO - Task:<Task(SQLExecuteQueryOperator): create_fact_beer_table> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 06:00:00+00:00: scheduled__2025-04-17T06:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:12.377924+00:00. externally triggered: False>
+[2025-04-17T12:28:05.666+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'create_fact_beer_table', 'Run Id': 'scheduled__2025-04-17T06:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:28:05.668+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:28:05.668+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=create_fact_beer_table, run_id=scheduled__2025-04-17T06:00:00+00:00, execution_date=20250417T060000, start_date=20250417T122736, end_date=20250417T122805
+[2025-04-17T12:28:05.917+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:28:05.915+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.create_fact_beer_table scheduled__2025-04-17T06:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:28:05.924+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:28:05.923+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'create_dim_brewery_table', 'Run Id': 'scheduled__2025-04-17T03:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:28:05.962+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:28:05.963+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:27:36.719392+00:00 end:2025-04-17 12:28:05.961240+00:00 duration:29.241848
+[2025-04-17T12:28:05.965+0000] {logging_mixin.py:190} INFO - Task:<Task(SQLExecuteQueryOperator): create_dim_brewery_table> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 03:00:00+00:00: scheduled__2025-04-17T03:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:07.227813+00:00. externally triggered: False>
+[2025-04-17T12:28:05.966+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'create_dim_brewery_table', 'Run Id': 'scheduled__2025-04-17T03:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:28:05.967+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:28:05.967+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=create_dim_brewery_table, run_id=scheduled__2025-04-17T03:00:00+00:00, execution_date=20250417T030000, start_date=20250417T122736, end_date=20250417T122805
+[2025-04-17T12:28:06.006+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:28:06.006+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.create_dim_brewery_table scheduled__2025-04-17T03:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:28:06.268+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:28:06.264+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:28:06.639+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:28:06.638+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:28:06.833+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 10.808 seconds
+[2025-04-17T12:28:07.653+0000] {processor.py:186} INFO - Started process (PID=3502) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:28:07.681+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:28:07.705+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:28:07.697+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:28:16.475+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:28:16.455+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:28:16.873+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:28:17.251+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:28:17.249+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'create_fact_beer_table', 'Run Id': 'scheduled__2025-04-17T06:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:28:17.738+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:28:17.745+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:27:36.709687+00:00 end:2025-04-17 12:28:17.322985+00:00 duration:40.613298
+[2025-04-17T12:28:17.751+0000] {logging_mixin.py:190} INFO - Task:<Task(SQLExecuteQueryOperator): create_fact_beer_table> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 06:00:00+00:00: scheduled__2025-04-17T06:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:12.377924+00:00. externally triggered: False>
+[2025-04-17T12:28:17.753+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'create_fact_beer_table', 'Run Id': 'scheduled__2025-04-17T06:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:28:17.758+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:28:17.757+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=create_fact_beer_table, run_id=scheduled__2025-04-17T06:00:00+00:00, execution_date=20250417T060000, start_date=20250417T122736, end_date=20250417T122817
+[2025-04-17T12:28:18.057+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:28:18.055+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.create_fact_beer_table scheduled__2025-04-17T06:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:28:18.067+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:28:18.067+0000] {taskinstance.py:3315} ERROR - {'DAG Id': 'beer_data_processing', 'Task Id': 'create_dim_brewery_table', 'Run Id': 'scheduled__2025-04-17T03:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:28:18.122+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-17T12:28:18.123+0000] {logging_mixin.py:190} INFO - Task start:2025-04-17 12:27:36.719392+00:00 end:2025-04-17 12:28:18.091389+00:00 duration:41.371997
+[2025-04-17T12:28:18.124+0000] {logging_mixin.py:190} INFO - Task:<Task(SQLExecuteQueryOperator): create_dim_brewery_table> dag:<DAG: beer_data_processing> dagrun:<DagRun beer_data_processing @ 2025-04-17 03:00:00+00:00: scheduled__2025-04-17T03:00:00+00:00, state:running, queued_at: 2025-04-17 11:36:07.227813+00:00. externally triggered: False>
+[2025-04-17T12:28:18.125+0000] {logging_mixin.py:190} INFO - Failure caused by {'DAG Id': 'beer_data_processing', 'Task Id': 'create_dim_brewery_table', 'Run Id': 'scheduled__2025-04-17T03:00:00+00:00', 'Hostname': 'a0d0456bae2c'}
+[2025-04-17T12:28:18.127+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:28:18.126+0000] {taskinstance.py:1226} INFO - Marking task as UP_FOR_RETRY. dag_id=beer_data_processing, task_id=create_dim_brewery_table, run_id=scheduled__2025-04-17T03:00:00+00:00, execution_date=20250417T030000, start_date=20250417T122736, end_date=20250417T122818
+[2025-04-17T12:28:18.166+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:28:18.165+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: beer_data_processing.create_dim_brewery_table scheduled__2025-04-17T03:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2025-04-17T12:28:18.341+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:28:18.339+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:28:18.476+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:28:18.475+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:28:18.634+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 11.271 seconds
+[2025-04-17T12:34:50.861+0000] {processor.py:186} INFO - Started process (PID=3804) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:34:50.960+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:34:51.060+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:34:51.047+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:35:03.061+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:35:02.989+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:35:03.776+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:35:04.307+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:35:04.303+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:35:04.948+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:35:04.947+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:35:05.370+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 14.908 seconds
+[2025-04-17T12:35:50.381+0000] {processor.py:186} INFO - Started process (PID=4156) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:35:50.384+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:35:50.387+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:35:50.386+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:35:52.287+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:35:52.286+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:35:52.406+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:35:52.493+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:35:52.489+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:35:52.614+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:35:52.614+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:35:52.684+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 2.317 seconds
+[2025-04-17T12:36:23.044+0000] {processor.py:186} INFO - Started process (PID=4345) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:36:23.046+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:36:23.050+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:36:23.049+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:36:25.944+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:36:25.942+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:36:25.969+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:36:26.009+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:36:26.008+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:36:26.395+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:36:26.394+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:36:26.432+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 3.403 seconds
+[2025-04-17T12:37:06.273+0000] {processor.py:186} INFO - Started process (PID=4657) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:37:06.346+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:37:06.485+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:37:06.484+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:37:07.991+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:37:07.990+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:37:08.010+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:37:08.042+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:37:08.041+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:37:08.085+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:37:08.085+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:37:09.187+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 2.982 seconds
+[2025-04-17T12:37:39.566+0000] {processor.py:186} INFO - Started process (PID=4977) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:37:39.568+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:37:39.571+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:37:39.571+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:37:40.856+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:37:40.855+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:37:40.879+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:37:40.915+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:37:40.914+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:37:40.957+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:37:40.956+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:37:40.998+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 1.442 seconds
+[2025-04-17T12:38:14.022+0000] {processor.py:186} INFO - Started process (PID=5282) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:38:14.024+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:38:14.027+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:38:14.027+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:38:16.046+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:38:16.044+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:38:16.073+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:38:16.128+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:38:16.127+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:38:16.219+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:38:16.218+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:38:16.277+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 2.277 seconds
+[2025-04-17T12:38:47.469+0000] {processor.py:186} INFO - Started process (PID=5589) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:38:47.473+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:38:47.479+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:38:47.478+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:38:51.308+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:38:51.306+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:38:51.360+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:38:51.433+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:38:51.433+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:38:51.507+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:38:51.507+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:38:51.760+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 4.318 seconds
+[2025-04-17T12:39:22.622+0000] {processor.py:186} INFO - Started process (PID=5934) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:39:22.637+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:39:22.642+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:39:22.641+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:39:26.704+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:39:26.703+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:39:26.735+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:39:27.471+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:39:27.470+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:39:27.553+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:39:27.552+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:39:27.621+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 5.014 seconds
+[2025-04-17T12:39:59.812+0000] {processor.py:186} INFO - Started process (PID=6317) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:39:59.909+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:39:59.912+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:39:59.911+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:40:01.631+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:40:01.630+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:40:01.672+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:40:02.267+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:40:02.265+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:40:02.326+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:40:02.326+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:40:02.385+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 2.582 seconds
+[2025-04-17T12:42:32.309+0000] {processor.py:186} INFO - Started process (PID=6673) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:42:32.316+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:42:32.322+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:42:32.321+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:42:35.012+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:42:35.011+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:42:35.031+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:42:35.070+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:42:35.069+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:42:35.115+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:42:35.115+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:42:35.164+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 2.876 seconds
+[2025-04-17T12:43:05.384+0000] {processor.py:186} INFO - Started process (PID=7102) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:43:05.386+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:43:05.389+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:43:05.388+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:43:06.780+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:43:06.778+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:43:07.211+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:43:07.250+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:43:07.249+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:43:07.298+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:43:07.297+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:43:07.336+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 1.971 seconds
+[2025-04-17T12:43:37.670+0000] {processor.py:186} INFO - Started process (PID=7415) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:43:37.673+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:43:37.677+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:43:37.676+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:43:40.236+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:43:40.235+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:43:40.280+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:43:40.330+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:43:40.329+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:43:40.393+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:43:40.392+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:43:40.444+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 2.804 seconds
+[2025-04-17T12:44:10.927+0000] {processor.py:186} INFO - Started process (PID=7753) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:44:10.929+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:44:10.931+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:44:10.930+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:44:12.865+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:44:12.864+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:44:12.895+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:44:12.975+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:44:12.974+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:44:13.053+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:44:13.053+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:44:13.112+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 2.201 seconds
+[2025-04-17T12:44:43.938+0000] {processor.py:186} INFO - Started process (PID=8221) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:44:44.018+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:44:44.022+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:44:44.021+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:44:45.602+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:44:45.601+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:44:45.621+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:44:45.654+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:44:45.653+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:44:45.703+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:44:45.703+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:44:45.742+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 1.819 seconds
+[2025-04-17T12:45:16.344+0000] {processor.py:186} INFO - Started process (PID=8552) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:45:16.410+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:45:16.414+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:45:16.413+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:45:18.781+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:45:18.779+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:45:18.802+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:45:18.835+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:45:18.834+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:45:18.881+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:45:18.881+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:45:19.088+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 2.756 seconds
+[2025-04-17T12:45:49.998+0000] {processor.py:186} INFO - Started process (PID=8885) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:45:50.000+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:45:50.002+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:45:50.002+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:45:51.618+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:45:51.617+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:45:51.640+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:45:51.677+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:45:51.676+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:45:51.726+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:45:51.726+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:45:51.767+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 1.779 seconds
+[2025-04-17T12:46:21.939+0000] {processor.py:186} INFO - Started process (PID=9207) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:46:21.940+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:46:21.943+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:46:21.942+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:46:23.387+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:46:23.386+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:46:23.404+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:46:23.437+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:46:23.436+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:46:23.478+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:46:23.478+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:46:23.509+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 1.581 seconds
+[2025-04-17T12:46:54.268+0000] {processor.py:186} INFO - Started process (PID=9514) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:46:54.271+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:46:54.274+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:46:54.273+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:46:56.158+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:46:56.157+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:46:56.174+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:46:56.206+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:46:56.205+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:46:56.245+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:46:56.245+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:46:56.286+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 2.036 seconds
+[2025-04-17T12:47:26.892+0000] {processor.py:186} INFO - Started process (PID=9821) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:47:26.894+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:47:26.897+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:47:26.896+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:47:28.831+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:47:28.830+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:47:28.862+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:47:28.919+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:47:28.918+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:47:29.001+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:47:29.001+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:47:29.067+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 2.191 seconds
+[2025-04-17T12:47:59.328+0000] {processor.py:186} INFO - Started process (PID=10128) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:47:59.330+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-17T12:47:59.333+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:47:59.332+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:48:01.042+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:48:01.041+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-17T12:48:01.104+0000] {processor.py:925} INFO - DAG(s) 'beer_data_processing' retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-17T12:48:01.153+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:48:01.152+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-17T12:48:01.232+0000] {logging_mixin.py:190} INFO - [2025-04-17T12:48:01.231+0000] {dag.py:4180} INFO - Setting next_dagrun for beer_data_processing to 2025-04-17 12:00:00+00:00, run_after=2025-04-17 13:00:00+00:00
+[2025-04-17T12:48:01.273+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 1.956 seconds

@@ -1,0 +1,27 @@
+[2025-04-10T13:31:38.615+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-10T13:31:38.664+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: beer_data_processing.load_and_process_data manual__2025-04-10T13:31:23.952261+00:00 [queued]>
+[2025-04-10T13:31:38.684+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: beer_data_processing.load_and_process_data manual__2025-04-10T13:31:23.952261+00:00 [queued]>
+[2025-04-10T13:31:38.685+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 6
+[2025-04-10T13:31:38.715+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): load_and_process_data> on 2025-04-10 13:31:23.952261+00:00
+[2025-04-10T13:31:38.754+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'beer_data_processing', 'load_and_process_data', 'manual__2025-04-10T13:31:23.952261+00:00', '--job-id', '260', '--raw', '--subdir', 'DAGS_FOLDER/beer_data_processing_dag.py', '--cfg-path', '/tmp/tmp0p6pr0_v']
+[2025-04-10T13:31:38.758+0000] {standard_task_runner.py:105} INFO - Job 260: Subtask load_and_process_data
+[2025-04-10T13:31:38.768+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=6386) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-04-10T13:31:38.771+0000] {standard_task_runner.py:72} INFO - Started process 6436 to run task
+[2025-04-10T13:31:38.900+0000] {task_command.py:467} INFO - Running <TaskInstance: beer_data_processing.load_and_process_data manual__2025-04-10T13:31:23.952261+00:00 [running]> on host 3e53738720c8
+[2025-04-10T13:31:39.108+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='beer_data_processing' AIRFLOW_CTX_TASK_ID='load_and_process_data' AIRFLOW_CTX_EXECUTION_DATE='2025-04-10T13:31:23.952261+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-10T13:31:23.952261+00:00'
+[2025-04-10T13:31:39.113+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-10T13:31:39.114+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-10T13:31:39.115+0000] {logging_mixin.py:190} INFO - Current task name:load_and_process_data state:running start_date:2025-04-10 13:31:38.665656+00:00
+[2025-04-10T13:31:39.116+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing and current dag run status:running
+[2025-04-10T13:31:39.117+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-10T13:31:39.526+0000] {logging_mixin.py:190} INFO - Завантажено 3197 записів з CSV файлу
+[2025-04-10T13:31:39.529+0000] {python.py:240} INFO - Done. Returned value was: True
+[2025-04-10T13:31:39.575+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-10T13:31:39.577+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=beer_data_processing, task_id=load_and_process_data, run_id=manual__2025-04-10T13:31:23.952261+00:00, execution_date=20250410T133123, start_date=20250410T133138, end_date=20250410T133139
+[2025-04-10T13:31:39.632+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-10T13:31:39.633+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-10T13:31:39.634+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing queued_at:2025-04-10 13:31:24.539061+00:00
+[2025-04-10T13:31:39.636+0000] {logging_mixin.py:190} INFO - Task hostname:3e53738720c8 operator:PythonOperator
+[2025-04-10T13:31:39.675+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-10T13:31:39.771+0000] {taskinstance.py:3901} INFO - 3 downstream tasks scheduled from follow-on schedule check
+[2025-04-10T13:31:39.776+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,30 @@
+[2025-04-17T12:18:39.234+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-17T12:18:39.404+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: beer_data_processing.process_proportions scheduled__2025-04-17T02:00:00+00:00 [queued]>
+[2025-04-17T12:18:39.462+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: beer_data_processing.process_proportions scheduled__2025-04-17T02:00:00+00:00 [queued]>
+[2025-04-17T12:18:39.473+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 6
+[2025-04-17T12:18:39.645+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): process_proportions> on 2025-04-17 02:00:00+00:00
+[2025-04-17T12:18:39.932+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=1542) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-04-17T12:18:40.037+0000] {standard_task_runner.py:72} INFO - Started process 1745 to run task
+[2025-04-17T12:18:40.132+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'beer_data_processing', 'process_proportions', 'scheduled__2025-04-17T02:00:00+00:00', '--job-id', '946', '--raw', '--subdir', 'DAGS_FOLDER/beer_data_processing_dag.py', '--cfg-path', '/tmp/tmp8dobx6n3']
+[2025-04-17T12:18:40.149+0000] {standard_task_runner.py:105} INFO - Job 946: Subtask process_proportions
+[2025-04-17T12:18:41.613+0000] {task_command.py:467} INFO - Running <TaskInstance: beer_data_processing.process_proportions scheduled__2025-04-17T02:00:00+00:00 [running]> on host a0d0456bae2c
+[2025-04-17T12:18:44.791+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='beer_data_processing' AIRFLOW_CTX_TASK_ID='process_proportions' AIRFLOW_CTX_EXECUTION_DATE='2025-04-17T02:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-17T02:00:00+00:00'
+[2025-04-17T12:18:44.906+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-17T12:18:44.914+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-17T12:18:44.934+0000] {logging_mixin.py:190} INFO - Current task name:process_proportions state:running start_date:2025-04-17 12:18:39.405686+00:00
+[2025-04-17T12:18:44.953+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing and current dag run status:running
+[2025-04-17T12:18:44.956+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-17T12:18:46.299+0000] {logging_mixin.py:190} INFO - Proportion Normalization Example - Original Sum: 611
+[2025-04-17T12:18:46.332+0000] {logging_mixin.py:190} INFO - Proportion Normalization Example - Normalized Sum: 1.0
+[2025-04-17T12:18:46.335+0000] {logging_mixin.py:190} INFO - Original values: {'Astringency': 18, 'Body': 70, 'Alcohol': 43, 'Bitter': 85, 'Sweet': 92, 'Sour': 26, 'Salty': 1, 'Fruits': 53, 'Hoppy': 95, 'Spices': 15, 'Malty': 113}
+[2025-04-17T12:18:46.337+0000] {logging_mixin.py:190} INFO - Normalized values: {'Astringency': 0.029459901800327332, 'Body': 0.11456628477905073, 'Alcohol': 0.07037643207855974, 'Bitter': 0.13911620294599017, 'Sweet': 0.15057283142389524, 'Sour': 0.0425531914893617, 'Salty': 0.0016366612111292963, 'Fruits': 0.0867430441898527, 'Hoppy': 0.15548281505728315, 'Spices': 0.024549918166939442, 'Malty': 0.18494271685761046}
+[2025-04-17T12:18:48.089+0000] {python.py:240} INFO - Done. Returned value was: True
+[2025-04-17T12:18:48.594+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-17T12:18:48.616+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=beer_data_processing, task_id=process_proportions, run_id=scheduled__2025-04-17T02:00:00+00:00, execution_date=20250417T020000, start_date=20250417T121839, end_date=20250417T121848
+[2025-04-17T12:18:49.142+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-17T12:18:49.154+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-17T12:18:49.164+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing queued_at:2025-04-17 11:36:03.845239+00:00
+[2025-04-17T12:18:49.165+0000] {logging_mixin.py:190} INFO - Task hostname:a0d0456bae2c operator:PythonOperator
+[2025-04-17T12:18:49.308+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-17T12:18:49.511+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-17T12:18:49.527+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

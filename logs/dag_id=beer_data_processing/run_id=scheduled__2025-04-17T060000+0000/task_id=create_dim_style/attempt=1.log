@@ -1,0 +1,35 @@
+[2025-04-17T12:28:58.771+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-17T12:28:59.260+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: beer_data_processing.create_dim_style scheduled__2025-04-17T06:00:00+00:00 [queued]>
+[2025-04-17T12:28:59.425+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: beer_data_processing.create_dim_style scheduled__2025-04-17T06:00:00+00:00 [queued]>
+[2025-04-17T12:28:59.453+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 6
+[2025-04-17T12:29:00.579+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): create_dim_style> on 2025-04-17 06:00:00+00:00
+[2025-04-17T12:29:05.327+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'beer_data_processing', 'create_dim_style', 'scheduled__2025-04-17T06:00:00+00:00', '--job-id', '1002', '--raw', '--subdir', 'DAGS_FOLDER/beer_data_processing_dag.py', '--cfg-path', '/tmp/tmplev0l1m_']
+[2025-04-17T12:29:05.428+0000] {standard_task_runner.py:105} INFO - Job 1002: Subtask create_dim_style
+[2025-04-17T12:29:07.011+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=3400) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-04-17T12:29:08.649+0000] {standard_task_runner.py:72} INFO - Started process 3578 to run task
+[2025-04-17T12:30:08.937+0000] {job.py:229} INFO - Heartbeat recovered after 72.71 seconds
+[2025-04-17T12:30:33.621+0000] {job.py:229} INFO - Heartbeat recovered after 28.01 seconds
+[2025-04-17T12:30:42.796+0000] {task_command.py:467} INFO - Running <TaskInstance: beer_data_processing.create_dim_style scheduled__2025-04-17T06:00:00+00:00 [running]> on host a0d0456bae2c
+[2025-04-17T12:31:00.386+0000] {job.py:229} INFO - Heartbeat recovered after 27.67 seconds
+[2025-04-17T12:31:05.444+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='beer_data_processing' AIRFLOW_CTX_TASK_ID='create_dim_style' AIRFLOW_CTX_EXECUTION_DATE='2025-04-17T06:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-17T06:00:00+00:00'
+[2025-04-17T12:31:06.558+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-17T12:31:06.690+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-17T12:31:06.862+0000] {logging_mixin.py:190} INFO - Current task name:create_dim_style state:running start_date:2025-04-17 12:28:59.273224+00:00
+[2025-04-17T12:31:07.137+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing and current dag run status:running
+[2025-04-17T12:31:07.393+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-17T12:31:28.121+0000] {job.py:229} INFO - Heartbeat recovered after 12.22 seconds
+[2025-04-17T12:32:09.473+0000] {job.py:229} INFO - Heartbeat recovered after 41.97 seconds
+[2025-04-17T12:32:13.879+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-04-17T12:32:19.310+0000] {job.py:229} INFO - Heartbeat recovered after 10.77 seconds
+[2025-04-17T12:32:21.744+0000] {logging_mixin.py:190} INFO - Створено датасет dim_style з 112 записами
+[2025-04-17T12:32:22.037+0000] {python.py:240} INFO - Done. Returned value was: True
+[2025-04-17T12:32:27.558+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-17T12:32:27.824+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=beer_data_processing, task_id=create_dim_style, run_id=scheduled__2025-04-17T06:00:00+00:00, execution_date=20250417T060000, start_date=20250417T122859, end_date=20250417T123227
+[2025-04-17T12:32:29.977+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-17T12:32:29.996+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-17T12:32:30.014+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing queued_at:2025-04-17 11:36:12.377924+00:00
+[2025-04-17T12:32:30.075+0000] {logging_mixin.py:190} INFO - Task hostname:a0d0456bae2c operator:PythonOperator
+[2025-04-17T12:32:31.249+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics
+[2025-04-17T12:32:30.927+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-17T12:32:34.367+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-17T12:32:34.503+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

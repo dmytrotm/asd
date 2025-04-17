@@ -1,0 +1,4 @@
+[2025-04-16T13:07:57.102+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-16T13:07:57.289+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: beer_data_processing.create_dim_brewery_table scheduled__2025-04-13T00:00:00+00:00 [up_for_retry]>
+[2025-04-16T13:07:57.390+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: beer_data_processing.create_dim_brewery_table scheduled__2025-04-13T00:00:00+00:00 [up_for_retry]>
+[2025-04-16T13:07:57.396+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 6

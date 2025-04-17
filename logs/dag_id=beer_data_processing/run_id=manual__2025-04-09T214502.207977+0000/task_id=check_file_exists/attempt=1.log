@@ -1,0 +1,32 @@
+[2025-04-09T21:45:30.736+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-09T21:45:30.788+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: beer_data_processing.check_file_exists manual__2025-04-09T21:45:02.207977+00:00 [queued]>
+[2025-04-09T21:45:30.876+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: beer_data_processing.check_file_exists manual__2025-04-09T21:45:02.207977+00:00 [queued]>
+[2025-04-09T21:45:30.878+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-04-09T21:45:30.928+0000] {taskinstance.py:2890} INFO - Executing <Task(FileSensor): check_file_exists> on 2025-04-09 21:45:02.207977+00:00
+[2025-04-09T21:45:30.976+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'beer_data_processing', 'check_file_exists', 'manual__2025-04-09T21:45:02.207977+00:00', '--job-id', '66', '--raw', '--subdir', 'DAGS_FOLDER/beer_data_processing_dag.py', '--cfg-path', '/tmp/tmphu2qm294']
+[2025-04-09T21:45:30.981+0000] {standard_task_runner.py:105} INFO - Job 66: Subtask check_file_exists
+[2025-04-09T21:45:30.994+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=28770) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-04-09T21:45:30.996+0000] {standard_task_runner.py:72} INFO - Started process 28856 to run task
+[2025-04-09T21:45:31.147+0000] {task_command.py:467} INFO - Running <TaskInstance: beer_data_processing.check_file_exists manual__2025-04-09T21:45:02.207977+00:00 [running]> on host 893b969cc7b0
+[2025-04-09T21:45:31.500+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='beer_data_processing' AIRFLOW_CTX_TASK_ID='check_file_exists' AIRFLOW_CTX_EXECUTION_DATE='2025-04-09T21:45:02.207977+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-09T21:45:02.207977+00:00'
+[2025-04-09T21:45:31.504+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-09T21:45:31.506+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-09T21:45:31.508+0000] {logging_mixin.py:190} INFO - Current task name:check_file_exists state:running start_date:2025-04-09 21:45:30.790333+00:00
+[2025-04-09T21:45:31.509+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing and current dag run status:running
+[2025-04-09T21:45:31.511+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-09T21:45:31.512+0000] {baseoperator.py:423} WARNING - FileSensor.execute cannot be called outside TaskInstance!
+[2025-04-09T21:45:31.535+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-09T21:45:31.537+0000] {filesystem.py:109} INFO - Poking for file /opt/***/dags/data/beer_profile_and_ratings.csv
+[2025-04-09T21:45:31.551+0000] {filesystem.py:113} INFO - Found File /opt/***/dags/data/beer_profile_and_ratings.csv last modified: 20250402135654
+[2025-04-09T21:45:31.553+0000] {base.py:339} INFO - Success criteria met. Exiting.
+[2025-04-09T21:45:31.554+0000] {filesystem.py:109} INFO - Poking for file /opt/***/dags/data/beer_profile_and_ratings.csv
+[2025-04-09T21:45:31.567+0000] {filesystem.py:113} INFO - Found File /opt/***/dags/data/beer_profile_and_ratings.csv last modified: 20250402135654
+[2025-04-09T21:45:31.593+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-09T21:45:31.595+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=beer_data_processing, task_id=check_file_exists, run_id=manual__2025-04-09T21:45:02.207977+00:00, execution_date=20250409T214502, start_date=20250409T214530, end_date=20250409T214531
+[2025-04-09T21:45:31.661+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-09T21:45:31.663+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-09T21:45:31.665+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing queued_at:2025-04-09 21:45:03.285545+00:00
+[2025-04-09T21:45:31.667+0000] {logging_mixin.py:190} INFO - Task hostname:893b969cc7b0 operator:FileSensor
+[2025-04-09T21:45:31.706+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-09T21:45:32.045+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-09T21:45:32.081+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

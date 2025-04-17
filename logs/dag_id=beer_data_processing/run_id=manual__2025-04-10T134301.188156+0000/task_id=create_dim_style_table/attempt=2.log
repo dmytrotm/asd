@@ -1,0 +1,47 @@
+[2025-04-10T13:47:36.279+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-10T13:47:43.974+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: beer_data_processing.create_dim_style_table manual__2025-04-10T13:43:01.188156+00:00 [queued]>
+[2025-04-10T13:47:52.839+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: beer_data_processing.create_dim_style_table manual__2025-04-10T13:43:01.188156+00:00 [queued]>
+[2025-04-10T13:47:53.830+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 6
+[2025-04-10T13:48:06.158+0000] {taskinstance.py:2890} INFO - Executing <Task(SQLExecuteQueryOperator): create_dim_style_table> on 2025-04-10 13:43:01.188156+00:00
+[2025-04-10T13:48:25.930+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'beer_data_processing', 'create_dim_style_table', 'manual__2025-04-10T13:43:01.188156+00:00', '--job-id', '305', '--raw', '--subdir', 'DAGS_FOLDER/beer_data_processing_dag.py', '--cfg-path', '/tmp/tmpda0c99k9']
+[2025-04-10T13:48:26.054+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=13540) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-04-10T13:48:26.185+0000] {standard_task_runner.py:105} INFO - Job 305: Subtask create_dim_style_table
+[2025-04-10T13:48:26.248+0000] {standard_task_runner.py:72} INFO - Started process 13710 to run task
+[2025-04-10T13:48:50.922+0000] {job.py:229} INFO - Heartbeat recovered after 83.99 seconds
+[2025-04-10T13:48:54.184+0000] {task_command.py:467} INFO - Running <TaskInstance: beer_data_processing.create_dim_style_table manual__2025-04-10T13:43:01.188156+00:00 [running]> on host 3e53738720c8
+[2025-04-10T13:48:56.778+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='beer_data_processing' AIRFLOW_CTX_TASK_ID='create_dim_style_table' AIRFLOW_CTX_EXECUTION_DATE='2025-04-10T13:43:01.188156+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-10T13:43:01.188156+00:00'
+[2025-04-10T13:48:56.979+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-10T13:48:57.006+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-10T13:48:57.053+0000] {logging_mixin.py:190} INFO - Current task name:create_dim_style_table state:running start_date:2025-04-10 13:47:44.277798+00:00
+[2025-04-10T13:48:57.067+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing and current dag run status:running
+[2025-04-10T13:48:57.082+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-10T13:48:57.130+0000] {sql.py:295} INFO - Executing: 
+    CREATE TABLE IF NOT EXISTS dim_style (
+        style_id SERIAL PRIMARY KEY,
+        style_name VARCHAR(255) NOT NULL UNIQUE
+    );
+    
+[2025-04-10T13:48:57.736+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-04-10T13:48:58.162+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-04-10T13:48:58.249+0000] {sql.py:511} INFO - Running statement: 
+    CREATE TABLE IF NOT EXISTS dim_style (
+        style_id SERIAL PRIMARY KEY,
+        style_name VARCHAR(255) NOT NULL UNIQUE
+    );
+    , parameters: None
+[2025-04-10T13:48:58.613+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/providers/common/sql/hooks/sql.py:470 DeprecationWarning: Import of fetch_all_handler from the '***.providers.common.sql.hooks' module is deprecated and will
+be removed in the future. Please import it from '***.providers.common.sql.hooks.handlers'.
+[2025-04-10T13:48:58.797+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/providers/common/sql/hooks/sql.py:471 DeprecationWarning: Import of return_single_query_results from the '***.providers.common.sql.hooks' module is deprecated and will
+be removed in the future. Please import it from '***.providers.common.sql.hooks.handlers'.
+[2025-04-10T13:48:58.855+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/providers/common/sql/hooks/sql.py:486 DeprecationWarning: Import of return_single_query_results from the '***.providers.common.sql.hooks' module is deprecated and will
+be removed in the future. Please import it from '***.providers.common.sql.hooks.handlers'.
+[2025-04-10T13:48:58.902+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/providers/common/sql/operators/sql.py:311 DeprecationWarning: Import of return_single_query_results from the '***.providers.common.sql.hooks' module is deprecated and will
+be removed in the future. Please import it from '***.providers.common.sql.hooks.handlers'.
+[2025-04-10T13:48:59.092+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-10T13:48:59.105+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=beer_data_processing, task_id=create_dim_style_table, run_id=manual__2025-04-10T13:43:01.188156+00:00, execution_date=20250410T134301, start_date=20250410T134744, end_date=20250410T134859
+[2025-04-10T13:49:00.022+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-10T13:49:00.037+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-10T13:49:00.071+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing queued_at:2025-04-10 13:43:02.020273+00:00
+[2025-04-10T13:49:00.089+0000] {logging_mixin.py:190} INFO - Task hostname:3e53738720c8 operator:SQLExecuteQueryOperator
+[2025-04-10T13:49:01.074+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-10T13:49:01.358+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,51 @@
+[2025-04-17T12:27:37.099+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-17T12:27:37.553+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: beer_data_processing.create_dim_style_table scheduled__2025-04-17T03:00:00+00:00 [queued]>
+[2025-04-17T12:27:37.685+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: beer_data_processing.create_dim_style_table scheduled__2025-04-17T03:00:00+00:00 [queued]>
+[2025-04-17T12:27:37.689+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 6
+[2025-04-17T12:27:38.038+0000] {taskinstance.py:2890} INFO - Executing <Task(SQLExecuteQueryOperator): create_dim_style_table> on 2025-04-17 03:00:00+00:00
+[2025-04-17T12:27:38.644+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=3067) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-04-17T12:27:38.650+0000] {standard_task_runner.py:72} INFO - Started process 3358 to run task
+[2025-04-17T12:27:38.930+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'beer_data_processing', 'create_dim_style_table', 'scheduled__2025-04-17T03:00:00+00:00', '--job-id', '998', '--raw', '--subdir', 'DAGS_FOLDER/beer_data_processing_dag.py', '--cfg-path', '/tmp/tmpgwxkhjs3']
+[2025-04-17T12:27:39.022+0000] {standard_task_runner.py:105} INFO - Job 998: Subtask create_dim_style_table
+[2025-04-17T12:27:49.213+0000] {cli_action_loggers.py:177} WARNING - Failed to log action (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2025-04-17T12:27:51.511+0000] {job.py:229} INFO - Heartbeat recovered after 15.62 seconds
+[2025-04-17T12:27:52.078+0000] {task_command.py:467} INFO - Running <TaskInstance: beer_data_processing.create_dim_style_table scheduled__2025-04-17T03:00:00+00:00 [running]> on host a0d0456bae2c
+[2025-04-17T12:27:53.471+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='beer_data_processing' AIRFLOW_CTX_TASK_ID='create_dim_style_table' AIRFLOW_CTX_EXECUTION_DATE='2025-04-17T03:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-17T03:00:00+00:00'
+[2025-04-17T12:27:53.492+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-17T12:27:53.494+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-17T12:27:53.496+0000] {logging_mixin.py:190} INFO - Current task name:create_dim_style_table state:running start_date:2025-04-17 12:27:37.576014+00:00
+[2025-04-17T12:27:53.500+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing and current dag run status:running
+[2025-04-17T12:27:53.516+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-17T12:27:53.521+0000] {sql.py:295} INFO - Executing: 
+    CREATE TABLE IF NOT EXISTS dim_style (
+        style_id SERIAL PRIMARY KEY,
+        style_name VARCHAR(255) NOT NULL UNIQUE
+    );
+    
+[2025-04-17T12:27:53.589+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-04-17T12:27:53.731+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-04-17T12:27:53.803+0000] {sql.py:511} INFO - Running statement: 
+    CREATE TABLE IF NOT EXISTS dim_style (
+        style_id SERIAL PRIMARY KEY,
+        style_name VARCHAR(255) NOT NULL UNIQUE
+    );
+    , parameters: None
+[2025-04-17T12:27:54.081+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/providers/common/sql/hooks/sql.py:470 DeprecationWarning: Import of fetch_all_handler from the '***.providers.common.sql.hooks' module is deprecated and will
+be removed in the future. Please import it from '***.providers.common.sql.hooks.handlers'.
+[2025-04-17T12:27:54.098+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/providers/common/sql/hooks/sql.py:471 DeprecationWarning: Import of return_single_query_results from the '***.providers.common.sql.hooks' module is deprecated and will
+be removed in the future. Please import it from '***.providers.common.sql.hooks.handlers'.
+[2025-04-17T12:27:54.155+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/providers/common/sql/hooks/sql.py:486 DeprecationWarning: Import of return_single_query_results from the '***.providers.common.sql.hooks' module is deprecated and will
+be removed in the future. Please import it from '***.providers.common.sql.hooks.handlers'.
+[2025-04-17T12:27:54.171+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/providers/common/sql/operators/sql.py:311 DeprecationWarning: Import of return_single_query_results from the '***.providers.common.sql.hooks' module is deprecated and will
+be removed in the future. Please import it from '***.providers.common.sql.hooks.handlers'.
+[2025-04-17T12:27:54.269+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-17T12:27:54.278+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=beer_data_processing, task_id=create_dim_style_table, run_id=scheduled__2025-04-17T03:00:00+00:00, execution_date=20250417T030000, start_date=20250417T122737, end_date=20250417T122754
+[2025-04-17T12:27:54.721+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-17T12:27:54.723+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-17T12:27:54.725+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing queued_at:2025-04-17 11:36:07.227813+00:00
+[2025-04-17T12:27:54.726+0000] {logging_mixin.py:190} INFO - Task hostname:a0d0456bae2c operator:SQLExecuteQueryOperator
+[2025-04-17T12:27:54.829+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-17T12:27:55.036+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-17T12:27:55.044+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

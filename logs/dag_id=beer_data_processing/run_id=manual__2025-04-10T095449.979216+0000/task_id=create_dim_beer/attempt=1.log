@@ -1,0 +1,28 @@
+[2025-04-10T09:56:40.380+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-10T09:56:40.427+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: beer_data_processing.create_dim_beer manual__2025-04-10T09:54:49.979216+00:00 [queued]>
+[2025-04-10T09:56:40.451+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: beer_data_processing.create_dim_beer manual__2025-04-10T09:54:49.979216+00:00 [queued]>
+[2025-04-10T09:56:40.452+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 6
+[2025-04-10T09:56:40.487+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): create_dim_beer> on 2025-04-10 09:54:49.979216+00:00
+[2025-04-10T09:56:40.514+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=24875) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-04-10T09:56:40.513+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'beer_data_processing', 'create_dim_beer', 'manual__2025-04-10T09:54:49.979216+00:00', '--job-id', '189', '--raw', '--subdir', 'DAGS_FOLDER/beer_data_processing_dag.py', '--cfg-path', '/tmp/tmpv9qihpnn']
+[2025-04-10T09:56:40.517+0000] {standard_task_runner.py:72} INFO - Started process 24936 to run task
+[2025-04-10T09:56:40.518+0000] {standard_task_runner.py:105} INFO - Job 189: Subtask create_dim_beer
+[2025-04-10T09:56:40.635+0000] {task_command.py:467} INFO - Running <TaskInstance: beer_data_processing.create_dim_beer manual__2025-04-10T09:54:49.979216+00:00 [running]> on host abcc0ba2292b
+[2025-04-10T09:56:40.895+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='beer_data_processing' AIRFLOW_CTX_TASK_ID='create_dim_beer' AIRFLOW_CTX_EXECUTION_DATE='2025-04-10T09:54:49.979216+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-10T09:54:49.979216+00:00'
+[2025-04-10T09:56:40.901+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-10T09:56:40.902+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-10T09:56:40.904+0000] {logging_mixin.py:190} INFO - Current task name:create_dim_beer state:running start_date:2025-04-10 09:56:40.429614+00:00
+[2025-04-10T09:56:40.907+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing and current dag run status:running
+[2025-04-10T09:56:40.910+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-10T09:56:41.134+0000] {logging_mixin.py:190} WARNING - /opt/***/dags/beer_data_processing_dag.py:65 FutureWarning: Passing literal json to 'read_json' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[2025-04-10T09:56:41.451+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-04-10T09:56:43.608+0000] {logging_mixin.py:190} INFO - Створено датасет dim_beer з 3066 записами
+[2025-04-10T09:56:43.612+0000] {python.py:240} INFO - Done. Returned value was: True
+[2025-04-10T09:56:43.650+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-10T09:56:43.652+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=beer_data_processing, task_id=create_dim_beer, run_id=manual__2025-04-10T09:54:49.979216+00:00, execution_date=20250410T095449, start_date=20250410T095640, end_date=20250410T095643
+[2025-04-10T09:56:43.697+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-10T09:56:43.700+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-10T09:56:43.701+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing queued_at:2025-04-10 09:54:50.150238+00:00
+[2025-04-10T09:56:43.703+0000] {logging_mixin.py:190} INFO - Task hostname:abcc0ba2292b operator:PythonOperator
+[2025-04-10T09:56:43.757+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-10T09:56:43.775+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

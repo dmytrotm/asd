@@ -1,0 +1,518 @@
+[2025-04-02T20:22:28.190+0000] {processor.py:186} INFO - Started process (PID=27601) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:22:28.192+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:22:28.194+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:22:28.194+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:22:28.261+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:22:28.247+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:22:28.265+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:22:28.341+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.161 seconds
+[2025-04-02T20:22:58.983+0000] {processor.py:186} INFO - Started process (PID=27897) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:22:58.985+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:22:58.988+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:22:58.987+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:22:59.037+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:22:59.026+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:22:59.042+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:22:59.070+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.096 seconds
+[2025-04-02T20:23:31.167+0000] {processor.py:186} INFO - Started process (PID=28161) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:23:31.650+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:23:31.652+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:23:31.652+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:23:31.967+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:23:31.959+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:23:31.970+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:23:32.366+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 1.208 seconds
+[2025-04-02T20:23:33.917+0000] {processor.py:186} INFO - Started process (PID=28222) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:23:33.919+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:23:33.921+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:23:33.921+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:23:34.018+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:23:34.006+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:23:34.022+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:23:34.058+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.151 seconds
+[2025-04-02T20:23:34.986+0000] {processor.py:186} INFO - Started process (PID=28253) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:23:34.990+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:23:34.995+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:23:34.994+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:23:35.058+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:23:35.047+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:23:35.062+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:23:35.096+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.121 seconds
+[2025-04-02T20:23:41.235+0000] {processor.py:186} INFO - Started process (PID=28294) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:23:41.238+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:23:41.242+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:23:41.242+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:23:41.346+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:23:41.333+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:23:41.352+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:23:41.387+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.164 seconds
+[2025-04-02T20:24:11.499+0000] {processor.py:186} INFO - Started process (PID=28591) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:24:11.501+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:24:11.504+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:24:11.503+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:24:11.547+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:24:11.537+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:24:11.552+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:24:11.581+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.091 seconds
+[2025-04-02T20:24:41.939+0000] {processor.py:186} INFO - Started process (PID=28887) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:24:41.941+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:24:41.944+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:24:41.943+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:24:42.004+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:24:41.990+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:24:42.011+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:24:42.055+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.127 seconds
+[2025-04-02T20:25:12.457+0000] {processor.py:186} INFO - Started process (PID=29183) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:25:12.459+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:25:12.462+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:25:12.461+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:25:12.513+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:25:12.501+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:25:12.517+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:25:12.550+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.103 seconds
+[2025-04-02T20:25:42.759+0000] {processor.py:186} INFO - Started process (PID=29479) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:25:42.761+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:25:42.763+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:25:42.763+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:25:42.811+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:25:42.800+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:25:42.815+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:25:42.846+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.096 seconds
+[2025-04-02T20:26:13.372+0000] {processor.py:186} INFO - Started process (PID=29775) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:26:13.374+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:26:13.377+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:26:13.376+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:26:13.427+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:26:13.415+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:26:13.432+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:26:13.485+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.122 seconds
+[2025-04-02T20:26:43.655+0000] {processor.py:186} INFO - Started process (PID=30071) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:26:43.657+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:26:43.659+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:26:43.658+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:26:43.702+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:26:43.689+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:26:43.705+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:26:43.735+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.089 seconds
+[2025-04-02T20:27:14.020+0000] {processor.py:186} INFO - Started process (PID=30367) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:27:14.022+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:27:14.027+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:27:14.026+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:27:14.085+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:27:14.072+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:27:14.090+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:27:14.119+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.110 seconds
+[2025-04-02T20:27:44.242+0000] {processor.py:186} INFO - Started process (PID=30661) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:27:44.243+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:27:44.245+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:27:44.245+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:27:44.280+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:27:44.272+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:27:44.283+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:27:44.309+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.076 seconds
+[2025-04-02T20:28:14.461+0000] {processor.py:186} INFO - Started process (PID=30954) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:28:14.465+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:28:14.467+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:28:14.467+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:28:14.501+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:28:14.493+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:28:14.504+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:28:14.530+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.077 seconds
+[2025-04-02T20:28:24.256+0000] {processor.py:186} INFO - Started process (PID=30994) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:28:24.258+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:28:24.260+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:28:24.259+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:28:24.346+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:28:24.330+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:28:24.350+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:28:24.388+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.141 seconds
+[2025-04-02T20:28:54.562+0000] {processor.py:186} INFO - Started process (PID=31290) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:28:54.565+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:28:54.568+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:28:54.567+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:28:54.621+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:28:54.609+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:28:54.625+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:28:54.663+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.113 seconds
+[2025-04-02T20:29:24.891+0000] {processor.py:186} INFO - Started process (PID=31586) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:29:24.893+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:29:24.895+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:29:24.895+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:29:24.946+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:29:24.934+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:29:24.951+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:29:24.985+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.107 seconds
+[2025-04-02T20:29:55.167+0000] {processor.py:186} INFO - Started process (PID=31883) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:29:55.169+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:29:55.171+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:29:55.170+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:29:55.209+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:29:55.198+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:29:55.212+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:29:55.239+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.080 seconds
+[2025-04-02T20:30:15.281+0000] {processor.py:186} INFO - Started process (PID=32064) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:30:15.283+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:30:15.286+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:30:15.286+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:30:15.390+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:30:15.376+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:30:15.396+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:30:15.443+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.174 seconds
+[2025-04-02T20:30:52.622+0000] {processor.py:186} INFO - Started process (PID=32320) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:30:52.624+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:30:52.626+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:30:52.626+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:30:52.672+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:30:52.661+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:30:52.676+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:30:52.708+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.096 seconds
+[2025-04-02T20:31:24.698+0000] {processor.py:186} INFO - Started process (PID=32609) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:31:24.700+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:31:24.703+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:31:24.703+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:31:24.764+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:31:24.750+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:31:24.769+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:31:24.802+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.114 seconds
+[2025-04-02T20:31:55.109+0000] {processor.py:186} INFO - Started process (PID=32901) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:31:55.113+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:31:55.119+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:31:55.118+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:31:55.246+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:31:55.224+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:31:55.260+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:31:55.367+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.283 seconds
+[2025-04-02T20:32:28.327+0000] {processor.py:186} INFO - Started process (PID=33194) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:32:28.555+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:32:28.972+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:32:28.646+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:32:29.202+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:32:29.190+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:32:29.206+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:32:29.265+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.946 seconds
+[2025-04-02T20:33:00.503+0000] {processor.py:186} INFO - Started process (PID=33491) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:33:00.505+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:33:00.507+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:33:00.506+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:33:00.927+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:33:00.916+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:33:01.004+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:33:01.683+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 1.189 seconds
+[2025-04-02T20:33:31.904+0000] {processor.py:186} INFO - Started process (PID=33787) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:33:31.906+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:33:31.909+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:33:31.908+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:33:31.946+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:33:31.937+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:33:31.948+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:33:31.976+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.080 seconds
+[2025-04-02T20:34:02.233+0000] {processor.py:186} INFO - Started process (PID=34083) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:34:02.234+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:34:02.237+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:34:02.236+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:34:02.273+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:34:02.264+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:34:02.276+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:34:02.302+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.077 seconds
+[2025-04-02T20:34:32.904+0000] {processor.py:186} INFO - Started process (PID=34379) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:34:32.907+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:34:32.910+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:34:32.909+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:34:32.976+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:34:32.960+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:34:32.981+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:34:33.023+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.133 seconds
+[2025-04-02T20:48:14.430+0000] {processor.py:186} INFO - Started process (PID=34675) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:48:14.439+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:48:14.455+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:48:14.452+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:48:14.576+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:48:14.549+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:48:14.584+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:48:14.729+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.407 seconds
+[2025-04-02T20:48:44.836+0000] {processor.py:186} INFO - Started process (PID=34971) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:48:44.838+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:48:44.840+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:48:44.840+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:48:44.877+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:48:44.867+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:48:44.880+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:48:44.908+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.080 seconds
+[2025-04-02T20:49:15.366+0000] {processor.py:186} INFO - Started process (PID=35268) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:49:15.367+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:49:15.369+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:49:15.369+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:49:15.403+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:49:15.394+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:49:15.406+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:49:15.433+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.076 seconds
+[2025-04-02T20:49:46.141+0000] {processor.py:186} INFO - Started process (PID=35564) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:49:46.142+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:49:46.144+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:49:46.144+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:49:46.179+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:49:46.170+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:49:46.183+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:49:46.209+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.078 seconds
+[2025-04-02T20:50:17.138+0000] {processor.py:186} INFO - Started process (PID=35860) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:50:17.140+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:50:17.143+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:50:17.142+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:50:17.187+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:50:17.178+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:50:17.190+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:50:17.218+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.089 seconds
+[2025-04-02T20:50:48.088+0000] {processor.py:186} INFO - Started process (PID=36157) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:50:48.090+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:50:48.094+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:50:48.093+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:50:48.155+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:50:48.144+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:50:48.159+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:50:48.195+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.121 seconds
+[2025-04-02T20:51:18.895+0000] {processor.py:186} INFO - Started process (PID=36453) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:51:18.896+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:51:18.899+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:51:18.898+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:51:19.403+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:51:19.036+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:51:19.407+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:51:19.766+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.881 seconds
+[2025-04-02T20:51:50.019+0000] {processor.py:186} INFO - Started process (PID=36749) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:51:50.021+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:51:50.024+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:51:50.023+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:51:50.081+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:51:50.072+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:51:50.085+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:51:50.115+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.107 seconds
+[2025-04-02T20:52:20.346+0000] {processor.py:186} INFO - Started process (PID=37045) to work on /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:52:20.348+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/beer_data_processing_dag.py for tasks to queue
+[2025-04-02T20:52:20.350+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:52:20.350+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:52:20.392+0000] {logging_mixin.py:190} INFO - [2025-04-02T20:52:20.382+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/beer_data_processing_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/beer_data_processing_dag.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import PostgresOperator
+ModuleNotFoundError: No module named 'airflow.providers.postgres.operators'
+[2025-04-02T20:52:20.395+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/beer_data_processing_dag.py
+[2025-04-02T20:52:20.423+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/beer_data_processing_dag.py took 0.086 seconds

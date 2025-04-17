@@ -1,0 +1,29 @@
+[2025-04-09T21:37:18.982+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-09T21:37:19.023+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test_conn_dag.test_fs_conn manual__2025-04-09T21:37:02.009727+00:00 [queued]>
+[2025-04-09T21:37:19.043+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test_conn_dag.test_fs_conn manual__2025-04-09T21:37:02.009727+00:00 [queued]>
+[2025-04-09T21:37:19.045+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-04-09T21:37:19.078+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): test_fs_conn> on 2025-04-09 21:37:02.009727+00:00
+[2025-04-09T21:37:19.115+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'test_conn_dag', 'test_fs_conn', 'manual__2025-04-09T21:37:02.009727+00:00', '--job-id', '64', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmptqvqf4mc']
+[2025-04-09T21:37:19.119+0000] {standard_task_runner.py:105} INFO - Job 64: Subtask test_fs_conn
+[2025-04-09T21:37:19.130+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=24450) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-04-09T21:37:19.132+0000] {standard_task_runner.py:72} INFO - Started process 24617 to run task
+[2025-04-09T21:37:19.236+0000] {task_command.py:467} INFO - Running <TaskInstance: test_conn_dag.test_fs_conn manual__2025-04-09T21:37:02.009727+00:00 [running]> on host 893b969cc7b0
+[2025-04-09T21:37:19.514+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='test_conn_dag' AIRFLOW_CTX_TASK_ID='test_fs_conn' AIRFLOW_CTX_EXECUTION_DATE='2025-04-09T21:37:02.009727+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-09T21:37:02.009727+00:00'
+[2025-04-09T21:37:19.518+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-09T21:37:19.520+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-09T21:37:19.522+0000] {logging_mixin.py:190} INFO - Current task name:test_fs_conn state:running start_date:2025-04-09 21:37:19.024661+00:00
+[2025-04-09T21:37:19.523+0000] {logging_mixin.py:190} INFO - Dag name:test_conn_dag and current dag run status:running
+[2025-04-09T21:37:19.525+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-09T21:37:19.555+0000] {base.py:84} INFO - Retrieving connection 'dataset_folder'
+[2025-04-09T21:37:19.557+0000] {logging_mixin.py:190} INFO - EXTRA: {'path': '/opt/***/dags/data'}
+[2025-04-09T21:37:19.559+0000] {logging_mixin.py:190} INFO - HOST: 
+[2025-04-09T21:37:19.563+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-09T21:37:19.591+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-09T21:37:19.593+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=test_conn_dag, task_id=test_fs_conn, run_id=manual__2025-04-09T21:37:02.009727+00:00, execution_date=20250409T213702, start_date=20250409T213719, end_date=20250409T213719
+[2025-04-09T21:37:19.705+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-09T21:37:19.708+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-09T21:37:19.710+0000] {logging_mixin.py:190} INFO - Dag name:test_conn_dag queued_at:2025-04-09 21:37:03.082467+00:00
+[2025-04-09T21:37:19.712+0000] {logging_mixin.py:190} INFO - Task hostname:893b969cc7b0 operator:PythonOperator
+[2025-04-09T21:37:19.761+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-09T21:37:19.808+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-09T21:37:19.812+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

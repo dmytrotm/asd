@@ -1,0 +1,29 @@
+[2025-04-16T12:54:08.622+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-16T12:54:09.256+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: beer_data_processing.create_dim_beer scheduled__2025-04-11T00:00:00+00:00 [queued]>
+[2025-04-16T12:54:09.388+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: beer_data_processing.create_dim_beer scheduled__2025-04-11T00:00:00+00:00 [queued]>
+[2025-04-16T12:54:09.402+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 6
+[2025-04-16T12:54:09.593+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): create_dim_beer> on 2025-04-11 00:00:00+00:00
+[2025-04-16T12:54:09.822+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'beer_data_processing', 'create_dim_beer', 'scheduled__2025-04-11T00:00:00+00:00', '--job-id', '362', '--raw', '--subdir', 'DAGS_FOLDER/beer_data_processing_dag.py', '--cfg-path', '/tmp/tmpq80mf6v6']
+[2025-04-16T12:54:09.866+0000] {standard_task_runner.py:105} INFO - Job 362: Subtask create_dim_beer
+[2025-04-16T12:54:09.882+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=1552) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-04-16T12:54:09.899+0000] {standard_task_runner.py:72} INFO - Started process 1951 to run task
+[2025-04-16T12:54:20.207+0000] {job.py:229} INFO - Heartbeat recovered after 13.23 seconds
+[2025-04-16T12:54:20.967+0000] {task_command.py:467} INFO - Running <TaskInstance: beer_data_processing.create_dim_beer scheduled__2025-04-11T00:00:00+00:00 [running]> on host 3e53738720c8
+[2025-04-16T12:54:22.355+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='beer_data_processing' AIRFLOW_CTX_TASK_ID='create_dim_beer' AIRFLOW_CTX_EXECUTION_DATE='2025-04-11T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-11T00:00:00+00:00'
+[2025-04-16T12:54:22.409+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-16T12:54:22.419+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-16T12:54:22.422+0000] {logging_mixin.py:190} INFO - Current task name:create_dim_beer state:running start_date:2025-04-16 12:54:09.261684+00:00
+[2025-04-16T12:54:22.425+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing and current dag run status:running
+[2025-04-16T12:54:22.428+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-16T12:54:24.025+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-04-16T12:54:28.630+0000] {logging_mixin.py:190} INFO - Створено датасет dim_beer з 3068 записами
+[2025-04-16T12:54:28.635+0000] {python.py:240} INFO - Done. Returned value was: True
+[2025-04-16T12:54:28.789+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-16T12:54:28.796+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=beer_data_processing, task_id=create_dim_beer, run_id=scheduled__2025-04-11T00:00:00+00:00, execution_date=20250411T000000, start_date=20250416T125409, end_date=20250416T125428
+[2025-04-16T12:54:28.903+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-16T12:54:28.905+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-16T12:54:28.906+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing queued_at:2025-04-16 12:41:28.007590+00:00
+[2025-04-16T12:54:28.909+0000] {logging_mixin.py:190} INFO - Task hostname:3e53738720c8 operator:PythonOperator
+[2025-04-16T12:54:28.971+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-16T12:54:29.103+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-16T12:54:29.115+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

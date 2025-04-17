@@ -1,0 +1,28 @@
+[2025-04-17T12:19:00.799+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-17T12:19:00.978+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: beer_data_processing.process_robust_scaler scheduled__2025-04-17T04:00:00+00:00 [queued]>
+[2025-04-17T12:19:01.090+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: beer_data_processing.process_robust_scaler scheduled__2025-04-17T04:00:00+00:00 [queued]>
+[2025-04-17T12:19:01.092+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 6
+[2025-04-17T12:19:01.264+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): process_robust_scaler> on 2025-04-17 04:00:00+00:00
+[2025-04-17T12:19:01.354+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=1663) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-04-17T12:19:01.370+0000] {standard_task_runner.py:72} INFO - Started process 1917 to run task
+[2025-04-17T12:19:01.389+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'beer_data_processing', 'process_robust_scaler', 'scheduled__2025-04-17T04:00:00+00:00', '--job-id', '957', '--raw', '--subdir', 'DAGS_FOLDER/beer_data_processing_dag.py', '--cfg-path', '/tmp/tmp56vn_sef']
+[2025-04-17T12:19:01.434+0000] {standard_task_runner.py:105} INFO - Job 957: Subtask process_robust_scaler
+[2025-04-17T12:19:01.820+0000] {task_command.py:467} INFO - Running <TaskInstance: beer_data_processing.process_robust_scaler scheduled__2025-04-17T04:00:00+00:00 [running]> on host a0d0456bae2c
+[2025-04-17T12:19:02.346+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='beer_data_processing' AIRFLOW_CTX_TASK_ID='process_robust_scaler' AIRFLOW_CTX_EXECUTION_DATE='2025-04-17T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-17T04:00:00+00:00'
+[2025-04-17T12:19:02.360+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-17T12:19:02.376+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-17T12:19:02.382+0000] {logging_mixin.py:190} INFO - Current task name:process_robust_scaler state:running start_date:2025-04-17 12:19:00.980748+00:00
+[2025-04-17T12:19:02.384+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing and current dag run status:running
+[2025-04-17T12:19:02.387+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-17T12:19:02.754+0000] {logging_mixin.py:190} INFO - Robust Scaling Example - Original: {'ABV': 10.0, 'Min IBU': 60.0, 'Max IBU': 100.0, 'number_of_reviews': 218.0}
+[2025-04-17T12:19:02.756+0000] {logging_mixin.py:190} INFO - Robust Scaling Example - Scaled: {'ABV': 1.5384615384615388, 'Min IBU': 4.0, 'Max IBU': 3.25, 'number_of_reviews': 0.4789272030651341}
+[2025-04-17T12:19:02.993+0000] {python.py:240} INFO - Done. Returned value was: True
+[2025-04-17T12:19:03.087+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-17T12:19:03.089+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=beer_data_processing, task_id=process_robust_scaler, run_id=scheduled__2025-04-17T04:00:00+00:00, execution_date=20250417T040000, start_date=20250417T121900, end_date=20250417T121903
+[2025-04-17T12:19:03.250+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-17T12:19:03.251+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-17T12:19:03.253+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing queued_at:2025-04-17 11:36:09.219510+00:00
+[2025-04-17T12:19:03.253+0000] {logging_mixin.py:190} INFO - Task hostname:a0d0456bae2c operator:PythonOperator
+[2025-04-17T12:19:03.281+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-17T12:19:03.405+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-17T12:19:03.556+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

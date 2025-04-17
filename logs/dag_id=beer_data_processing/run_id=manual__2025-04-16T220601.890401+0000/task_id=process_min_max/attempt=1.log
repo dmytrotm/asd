@@ -1,0 +1,28 @@
+[2025-04-16T22:06:21.672+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-16T22:06:21.741+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: beer_data_processing.process_min_max manual__2025-04-16T22:06:01.890401+00:00 [queued]>
+[2025-04-16T22:06:21.770+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: beer_data_processing.process_min_max manual__2025-04-16T22:06:01.890401+00:00 [queued]>
+[2025-04-16T22:06:21.772+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 6
+[2025-04-16T22:06:21.826+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): process_min_max> on 2025-04-16 22:06:01.890401+00:00
+[2025-04-16T22:06:21.870+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'beer_data_processing', 'process_min_max', 'manual__2025-04-16T22:06:01.890401+00:00', '--job-id', '854', '--raw', '--subdir', 'DAGS_FOLDER/beer_data_processing_dag.py', '--cfg-path', '/tmp/tmp0c46x8f_']
+[2025-04-16T22:06:21.869+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=16681) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-04-16T22:06:21.874+0000] {standard_task_runner.py:72} INFO - Started process 16829 to run task
+[2025-04-16T22:06:21.874+0000] {standard_task_runner.py:105} INFO - Job 854: Subtask process_min_max
+[2025-04-16T22:06:22.042+0000] {task_command.py:467} INFO - Running <TaskInstance: beer_data_processing.process_min_max manual__2025-04-16T22:06:01.890401+00:00 [running]> on host a0d0456bae2c
+[2025-04-16T22:06:22.368+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='beer_data_processing' AIRFLOW_CTX_TASK_ID='process_min_max' AIRFLOW_CTX_EXECUTION_DATE='2025-04-16T22:06:01.890401+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-16T22:06:01.890401+00:00'
+[2025-04-16T22:06:22.377+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-16T22:06:22.386+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-16T22:06:22.391+0000] {logging_mixin.py:190} INFO - Current task name:process_min_max state:running start_date:2025-04-16 22:06:21.743389+00:00
+[2025-04-16T22:06:22.392+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing and current dag run status:running
+[2025-04-16T22:06:22.396+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-16T22:06:22.604+0000] {logging_mixin.py:190} INFO - MinMax Scaling Example - Original: {'review_aroma': 4.013761, 'review_appearance': 4.15367, 'review_palate': 4.084862, 'review_taste': 4.094037, 'review_overall': 3.961009}
+[2025-04-16T22:06:22.606+0000] {logging_mixin.py:190} INFO - MinMax Scaling Example - Scaled: {'review_aroma': 0.7174411991800331, 'review_appearance': 0.8342625025926924, 'review_palate': 0.753616711260253, 'review_taste': 0.7606890008067171, 'review_overall': 0.7310846570432619}
+[2025-04-16T22:06:22.768+0000] {python.py:240} INFO - Done. Returned value was: True
+[2025-04-16T22:06:22.824+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-16T22:06:22.826+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=beer_data_processing, task_id=process_min_max, run_id=manual__2025-04-16T22:06:01.890401+00:00, execution_date=20250416T220601, start_date=20250416T220621, end_date=20250416T220622
+[2025-04-16T22:06:22.891+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-16T22:06:22.893+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-16T22:06:22.894+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing queued_at:2025-04-16 22:06:02.204012+00:00
+[2025-04-16T22:06:22.896+0000] {logging_mixin.py:190} INFO - Task hostname:a0d0456bae2c operator:PythonOperator
+[2025-04-16T22:06:22.942+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-16T22:06:23.053+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-16T22:06:23.060+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,26 @@
+[2025-04-16T12:59:11.180+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-16T12:59:11.285+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: beer_data_processing.process_robust_scaler scheduled__2025-04-11T00:00:00+00:00 [queued]>
+[2025-04-16T12:59:11.349+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: beer_data_processing.process_robust_scaler scheduled__2025-04-11T00:00:00+00:00 [queued]>
+[2025-04-16T12:59:11.352+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 6
+[2025-04-16T12:59:11.440+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): process_robust_scaler> on 2025-04-11 00:00:00+00:00
+[2025-04-16T12:59:11.536+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=2236) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-04-16T12:59:11.536+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'beer_data_processing', 'process_robust_scaler', 'scheduled__2025-04-11T00:00:00+00:00', '--job-id', '384', '--raw', '--subdir', 'DAGS_FOLDER/beer_data_processing_dag.py', '--cfg-path', '/tmp/tmp3wwt5t87']
+[2025-04-16T12:59:11.539+0000] {standard_task_runner.py:72} INFO - Started process 2502 to run task
+[2025-04-16T12:59:11.540+0000] {standard_task_runner.py:105} INFO - Job 384: Subtask process_robust_scaler
+[2025-04-16T12:59:11.716+0000] {task_command.py:467} INFO - Running <TaskInstance: beer_data_processing.process_robust_scaler scheduled__2025-04-11T00:00:00+00:00 [running]> on host 3e53738720c8
+[2025-04-16T12:59:12.120+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='beer_data_processing' AIRFLOW_CTX_TASK_ID='process_robust_scaler' AIRFLOW_CTX_EXECUTION_DATE='2025-04-11T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-11T00:00:00+00:00'
+[2025-04-16T12:59:12.141+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-16T12:59:12.143+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-16T12:59:12.145+0000] {logging_mixin.py:190} INFO - Current task name:process_robust_scaler state:running start_date:2025-04-16 12:59:11.287811+00:00
+[2025-04-16T12:59:12.147+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing and current dag run status:running
+[2025-04-16T12:59:12.150+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-16T12:59:13.743+0000] {python.py:240} INFO - Done. Returned value was: True
+[2025-04-16T12:59:13.826+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-16T12:59:13.827+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=beer_data_processing, task_id=process_robust_scaler, run_id=scheduled__2025-04-11T00:00:00+00:00, execution_date=20250411T000000, start_date=20250416T125911, end_date=20250416T125913
+[2025-04-16T12:59:13.914+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-04-16T12:59:13.916+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-04-16T12:59:13.918+0000] {logging_mixin.py:190} INFO - Dag name:beer_data_processing queued_at:2025-04-16 12:41:28.007590+00:00
+[2025-04-16T12:59:13.919+0000] {logging_mixin.py:190} INFO - Task hostname:3e53738720c8 operator:PythonOperator
+[2025-04-16T12:59:13.991+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-16T12:59:14.073+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-16T12:59:14.079+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
