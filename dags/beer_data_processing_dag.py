@@ -34,7 +34,7 @@ dag = DAG(
     'beer_data_processing',
     default_args=default_args,
     description='Pipeline для обробки даних про пиво',
-    schedule=timedelta(hours=1),
+    schedule=timedelta(days=1),
 )
 
 # Контекстний менеджер для безпечної роботи з базою даних

@@ -1,3 +1,23 @@
+# Virtual environments
 .venv
+dags/venv
+
+# IDE settings
 .vscode
+
+# Airflow logs and temporary files
+logs/
 dags/logs
+tmp/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
