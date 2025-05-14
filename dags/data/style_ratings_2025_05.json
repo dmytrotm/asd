@@ -1,0 +1,890 @@
+[
+    {
+        "style_id":1,
+        "style_name":"Altbier",
+        "avg_style_rating":0.7197435897,
+        "total_style_reviews":9,
+        "beer_count":39,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":2,
+        "style_name":"Barleywine - American",
+        "avg_style_rating":0.715,
+        "total_style_reviews":29,
+        "beer_count":38,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":3,
+        "style_name":"Barleywine - English",
+        "avg_style_rating":0.7242307692,
+        "total_style_reviews":13,
+        "beer_count":26,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":4,
+        "style_name":"Bitter - English Extra Special \/ Strong Bitter (ESB)",
+        "avg_style_rating":0.7066666667,
+        "total_style_reviews":16,
+        "beer_count":33,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":5,
+        "style_name":"Bitter - English",
+        "avg_style_rating":0.69675,
+        "total_style_reviews":8,
+        "beer_count":40,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":6,
+        "style_name":"Bi\u00e8re de Champagne \/ Bi\u00e8re Brut",
+        "avg_style_rating":0.7475,
+        "total_style_reviews":1,
+        "beer_count":8,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":7,
+        "style_name":"Blonde Ale - American",
+        "avg_style_rating":0.6661290323,
+        "total_style_reviews":7,
+        "beer_count":31,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":8,
+        "style_name":"Blonde Ale - Belgian",
+        "avg_style_rating":0.670625,
+        "total_style_reviews":8,
+        "beer_count":32,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":9,
+        "style_name":"Bock - Doppelbock",
+        "avg_style_rating":0.6965,
+        "total_style_reviews":32,
+        "beer_count":40,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":10,
+        "style_name":"Bock - Eisbock",
+        "avg_style_rating":0.69,
+        "total_style_reviews":3,
+        "beer_count":14,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":11,
+        "style_name":"Bock - Maibock",
+        "avg_style_rating":0.6875,
+        "total_style_reviews":13,
+        "beer_count":32,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":12,
+        "style_name":"Bock - Traditional",
+        "avg_style_rating":0.6602941176,
+        "total_style_reviews":17,
+        "beer_count":34,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":13,
+        "style_name":"Bock - Weizenbock",
+        "avg_style_rating":0.704,
+        "total_style_reviews":14,
+        "beer_count":30,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":14,
+        "style_name":"Braggot",
+        "avg_style_rating":0.6615384615,
+        "total_style_reviews":0,
+        "beer_count":13,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":15,
+        "style_name":"Brett Beer",
+        "avg_style_rating":0.75,
+        "total_style_reviews":2,
+        "beer_count":3,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":16,
+        "style_name":"Brown Ale - American",
+        "avg_style_rating":0.7088888889,
+        "total_style_reviews":39,
+        "beer_count":27,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":17,
+        "style_name":"Brown Ale - Belgian Dark",
+        "avg_style_rating":0.6511538462,
+        "total_style_reviews":3,
+        "beer_count":26,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":18,
+        "style_name":"Brown Ale - English",
+        "avg_style_rating":0.6952941176,
+        "total_style_reviews":15,
+        "beer_count":34,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":19,
+        "style_name":"California Common \/ Steam Beer",
+        "avg_style_rating":0.6945,
+        "total_style_reviews":6,
+        "beer_count":20,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":20,
+        "style_name":"Chile Beer",
+        "avg_style_rating":0.5568,
+        "total_style_reviews":4,
+        "beer_count":25,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":21,
+        "style_name":"Cream Ale",
+        "avg_style_rating":0.6160869565,
+        "total_style_reviews":5,
+        "beer_count":23,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":22,
+        "style_name":"Dubbel",
+        "avg_style_rating":0.702,
+        "total_style_reviews":41,
+        "beer_count":40,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":23,
+        "style_name":"Farmhouse Ale - Bi\u00e8re de Garde",
+        "avg_style_rating":0.7077419355,
+        "total_style_reviews":6,
+        "beer_count":31,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":24,
+        "style_name":"Farmhouse Ale - Sahti",
+        "avg_style_rating":0.6388888889,
+        "total_style_reviews":1,
+        "beer_count":9,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":25,
+        "style_name":"Farmhouse Ale - Saison",
+        "avg_style_rating":0.755483871,
+        "total_style_reviews":34,
+        "beer_count":31,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":26,
+        "style_name":"Fruit and Field Beer",
+        "avg_style_rating":0.6283783784,
+        "total_style_reviews":39,
+        "beer_count":37,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":27,
+        "style_name":"Gruit \/ Ancient Herbed Ale",
+        "avg_style_rating":0.6510526316,
+        "total_style_reviews":6,
+        "beer_count":19,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":28,
+        "style_name":"Happoshu",
+        "avg_style_rating":0.5626086957,
+        "total_style_reviews":0,
+        "beer_count":23,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":29,
+        "style_name":"Herb and Spice Beer",
+        "avg_style_rating":0.6254166667,
+        "total_style_reviews":11,
+        "beer_count":24,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":30,
+        "style_name":"IPA - American",
+        "avg_style_rating":0.7597222222,
+        "total_style_reviews":116,
+        "beer_count":36,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":31,
+        "style_name":"IPA - Belgian",
+        "avg_style_rating":0.7253846154,
+        "total_style_reviews":15,
+        "beer_count":26,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":32,
+        "style_name":"IPA - Black \/ Cascadian Dark Ale",
+        "avg_style_rating":0.722173913,
+        "total_style_reviews":10,
+        "beer_count":23,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":33,
+        "style_name":"IPA - English",
+        "avg_style_rating":0.676969697,
+        "total_style_reviews":18,
+        "beer_count":33,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":34,
+        "style_name":"IPA - Imperial",
+        "avg_style_rating":0.7645714286,
+        "total_style_reviews":116,
+        "beer_count":35,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":35,
+        "style_name":"IPA - New England",
+        "avg_style_rating":0.8525,
+        "total_style_reviews":1,
+        "beer_count":4,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":36,
+        "style_name":"Kvass",
+        "avg_style_rating":0.5595238095,
+        "total_style_reviews":0,
+        "beer_count":21,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":37,
+        "style_name":"K\u00f6lsch",
+        "avg_style_rating":0.72,
+        "total_style_reviews":5,
+        "beer_count":32,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":38,
+        "style_name":"Lager - Adjunct",
+        "avg_style_rating":0.4826666667,
+        "total_style_reviews":43,
+        "beer_count":45,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":39,
+        "style_name":"Lager - American Amber \/ Red",
+        "avg_style_rating":0.6191176471,
+        "total_style_reviews":10,
+        "beer_count":34,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":40,
+        "style_name":"Lager - American",
+        "avg_style_rating":0.5763636364,
+        "total_style_reviews":8,
+        "beer_count":22,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":41,
+        "style_name":"Lager - European \/ Dortmunder Export",
+        "avg_style_rating":0.6265714286,
+        "total_style_reviews":4,
+        "beer_count":35,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":42,
+        "style_name":"Lager - European Dark",
+        "avg_style_rating":0.6225806452,
+        "total_style_reviews":9,
+        "beer_count":31,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":43,
+        "style_name":"Lager - European Pale",
+        "avg_style_rating":0.5295348837,
+        "total_style_reviews":29,
+        "beer_count":43,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":44,
+        "style_name":"Lager - European Strong",
+        "avg_style_rating":0.4438461538,
+        "total_style_reviews":2,
+        "beer_count":39,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":45,
+        "style_name":"Lager - Helles",
+        "avg_style_rating":0.7027777778,
+        "total_style_reviews":10,
+        "beer_count":36,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":46,
+        "style_name":"Lager - India Pale Lager (IPL)",
+        "avg_style_rating":0.72,
+        "total_style_reviews":0,
+        "beer_count":6,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":47,
+        "style_name":"Lager - Japanese Rice",
+        "avg_style_rating":0.5219047619,
+        "total_style_reviews":1,
+        "beer_count":21,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":48,
+        "style_name":"Lager - Kellerbier \/ Zwickelbier",
+        "avg_style_rating":0.7526666667,
+        "total_style_reviews":0,
+        "beer_count":15,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":49,
+        "style_name":"Lager - Light",
+        "avg_style_rating":0.414,
+        "total_style_reviews":23,
+        "beer_count":40,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":50,
+        "style_name":"Lager - Malt Liquor",
+        "avg_style_rating":0.3463636364,
+        "total_style_reviews":4,
+        "beer_count":33,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":51,
+        "style_name":"Lager - Munich Dunkel",
+        "avg_style_rating":0.6897222222,
+        "total_style_reviews":7,
+        "beer_count":36,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":52,
+        "style_name":"Lager - M\u00e4rzen \/ Oktoberfest",
+        "avg_style_rating":0.6820689655,
+        "total_style_reviews":27,
+        "beer_count":29,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":53,
+        "style_name":"Lager - Rauchbier",
+        "avg_style_rating":0.7030434783,
+        "total_style_reviews":6,
+        "beer_count":23,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":54,
+        "style_name":"Lager - Schwarzbier",
+        "avg_style_rating":0.6853571429,
+        "total_style_reviews":11,
+        "beer_count":28,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":55,
+        "style_name":"Lager - Vienna",
+        "avg_style_rating":0.6383783784,
+        "total_style_reviews":16,
+        "beer_count":37,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":56,
+        "style_name":"Lambic - Faro",
+        "avg_style_rating":0.6175,
+        "total_style_reviews":0,
+        "beer_count":8,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":57,
+        "style_name":"Lambic - Fruit",
+        "avg_style_rating":0.723902439,
+        "total_style_reviews":15,
+        "beer_count":41,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":58,
+        "style_name":"Lambic - Gueuze",
+        "avg_style_rating":0.7424,
+        "total_style_reviews":5,
+        "beer_count":25,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":59,
+        "style_name":"Lambic - Traditional",
+        "avg_style_rating":0.7786956522,
+        "total_style_reviews":2,
+        "beer_count":23,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":60,
+        "style_name":"Low Alcohol Beer",
+        "avg_style_rating":0.3803125,
+        "total_style_reviews":0,
+        "beer_count":32,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":61,
+        "style_name":"Mild Ale - English Dark",
+        "avg_style_rating":0.6911111111,
+        "total_style_reviews":1,
+        "beer_count":27,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":62,
+        "style_name":"Mild Ale - English Pale",
+        "avg_style_rating":0.6342105263,
+        "total_style_reviews":0,
+        "beer_count":19,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":63,
+        "style_name":"Old Ale",
+        "avg_style_rating":0.7247058824,
+        "total_style_reviews":22,
+        "beer_count":34,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":64,
+        "style_name":"Pale Ale - American",
+        "avg_style_rating":0.7636,
+        "total_style_reviews":36,
+        "beer_count":25,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":65,
+        "style_name":"Pale Ale - Belgian",
+        "avg_style_rating":0.6884848485,
+        "total_style_reviews":19,
+        "beer_count":33,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":66,
+        "style_name":"Pale Ale - English",
+        "avg_style_rating":0.66225,
+        "total_style_reviews":33,
+        "beer_count":40,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":67,
+        "style_name":"Pilsner - Bohemian \/ Czech",
+        "avg_style_rating":0.6917241379,
+        "total_style_reviews":6,
+        "beer_count":29,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":68,
+        "style_name":"Pilsner - German",
+        "avg_style_rating":0.6994736842,
+        "total_style_reviews":27,
+        "beer_count":38,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":69,
+        "style_name":"Pilsner - Imperial",
+        "avg_style_rating":0.6752631579,
+        "total_style_reviews":5,
+        "beer_count":19,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":70,
+        "style_name":"Porter - American",
+        "avg_style_rating":0.7145454545,
+        "total_style_reviews":42,
+        "beer_count":33,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":71,
+        "style_name":"Porter - Baltic",
+        "avg_style_rating":0.7219230769,
+        "total_style_reviews":8,
+        "beer_count":26,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":72,
+        "style_name":"Porter - English",
+        "avg_style_rating":0.6914285714,
+        "total_style_reviews":13,
+        "beer_count":35,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":73,
+        "style_name":"Porter - Imperial",
+        "avg_style_rating":0.756,
+        "total_style_reviews":9,
+        "beer_count":20,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":74,
+        "style_name":"Porter - Robust",
+        "avg_style_rating":0.7221428571,
+        "total_style_reviews":3,
+        "beer_count":14,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":75,
+        "style_name":"Porter - Smoked",
+        "avg_style_rating":0.7427777778,
+        "total_style_reviews":4,
+        "beer_count":18,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":76,
+        "style_name":"Pumpkin Beer",
+        "avg_style_rating":0.6663333333,
+        "total_style_reviews":29,
+        "beer_count":30,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":77,
+        "style_name":"Quadrupel (Quad)",
+        "avg_style_rating":0.735,
+        "total_style_reviews":50,
+        "beer_count":34,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":78,
+        "style_name":"Red Ale - American Amber \/ Red",
+        "avg_style_rating":0.7209375,
+        "total_style_reviews":37,
+        "beer_count":32,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":79,
+        "style_name":"Red Ale - Imperial",
+        "avg_style_rating":0.7194736842,
+        "total_style_reviews":18,
+        "beer_count":19,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":80,
+        "style_name":"Red Ale - Irish",
+        "avg_style_rating":0.6519444444,
+        "total_style_reviews":8,
+        "beer_count":36,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":81,
+        "style_name":"Rye Beer - Roggenbier",
+        "avg_style_rating":0.6946153846,
+        "total_style_reviews":0,
+        "beer_count":13,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":82,
+        "style_name":"Rye Beer",
+        "avg_style_rating":0.7266666667,
+        "total_style_reviews":17,
+        "beer_count":21,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":83,
+        "style_name":"Scotch Ale \/ Wee Heavy",
+        "avg_style_rating":0.7094117647,
+        "total_style_reviews":27,
+        "beer_count":34,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":84,
+        "style_name":"Scottish Ale",
+        "avg_style_rating":0.6903125,
+        "total_style_reviews":11,
+        "beer_count":32,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":85,
+        "style_name":"Smoked Beer",
+        "avg_style_rating":0.6907142857,
+        "total_style_reviews":1,
+        "beer_count":28,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":86,
+        "style_name":"Sour - Berliner Weisse",
+        "avg_style_rating":0.6977777778,
+        "total_style_reviews":5,
+        "beer_count":9,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":87,
+        "style_name":"Sour - Flanders Oud Bruin",
+        "avg_style_rating":0.722,
+        "total_style_reviews":8,
+        "beer_count":20,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":88,
+        "style_name":"Sour - Flanders Red Ale",
+        "avg_style_rating":0.7341666667,
+        "total_style_reviews":11,
+        "beer_count":24,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":89,
+        "style_name":"Sour - Gose",
+        "avg_style_rating":0.7166666667,
+        "total_style_reviews":2,
+        "beer_count":3,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":90,
+        "style_name":"Stout - American Imperial",
+        "avg_style_rating":0.7867647059,
+        "total_style_reviews":76,
+        "beer_count":34,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":91,
+        "style_name":"Stout - American",
+        "avg_style_rating":0.7246428571,
+        "total_style_reviews":21,
+        "beer_count":28,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":92,
+        "style_name":"Stout - English",
+        "avg_style_rating":0.6853571429,
+        "total_style_reviews":1,
+        "beer_count":28,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":93,
+        "style_name":"Stout - Foreign \/ Export",
+        "avg_style_rating":0.6926470588,
+        "total_style_reviews":9,
+        "beer_count":34,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":94,
+        "style_name":"Stout - Irish Dry",
+        "avg_style_rating":0.695952381,
+        "total_style_reviews":23,
+        "beer_count":42,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":95,
+        "style_name":"Stout - Oatmeal",
+        "avg_style_rating":0.7446666667,
+        "total_style_reviews":44,
+        "beer_count":30,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":96,
+        "style_name":"Stout - Russian Imperial",
+        "avg_style_rating":0.7566666667,
+        "total_style_reviews":50,
+        "beer_count":33,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":97,
+        "style_name":"Stout - Sweet \/ Milk",
+        "avg_style_rating":0.734,
+        "total_style_reviews":13,
+        "beer_count":15,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":98,
+        "style_name":"Strong Ale - American",
+        "avg_style_rating":0.71125,
+        "total_style_reviews":20,
+        "beer_count":32,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":99,
+        "style_name":"Strong Ale - Belgian Dark",
+        "avg_style_rating":0.73075,
+        "total_style_reviews":66,
+        "beer_count":40,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":100,
+        "style_name":"Strong Ale - Belgian Pale",
+        "avg_style_rating":0.71525,
+        "total_style_reviews":46,
+        "beer_count":40,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":101,
+        "style_name":"Strong Ale - English",
+        "avg_style_rating":0.6611428571,
+        "total_style_reviews":12,
+        "beer_count":35,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":102,
+        "style_name":"Tripel",
+        "avg_style_rating":0.7216666667,
+        "total_style_reviews":56,
+        "beer_count":36,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":103,
+        "style_name":"Wheat Beer - American Dark",
+        "avg_style_rating":0.6417647059,
+        "total_style_reviews":0,
+        "beer_count":17,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":104,
+        "style_name":"Wheat Beer - American Pale",
+        "avg_style_rating":0.6403125,
+        "total_style_reviews":26,
+        "beer_count":32,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":105,
+        "style_name":"Wheat Beer - Dunkelweizen",
+        "avg_style_rating":0.6772972973,
+        "total_style_reviews":13,
+        "beer_count":37,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":106,
+        "style_name":"Wheat Beer - Hefeweizen",
+        "avg_style_rating":0.71975,
+        "total_style_reviews":40,
+        "beer_count":40,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":107,
+        "style_name":"Wheat Beer - Kristallweizen",
+        "avg_style_rating":0.6915384615,
+        "total_style_reviews":3,
+        "beer_count":26,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":108,
+        "style_name":"Wheat Beer - Wheatwine",
+        "avg_style_rating":0.7386666667,
+        "total_style_reviews":1,
+        "beer_count":15,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":109,
+        "style_name":"Wheat Beer - Witbier",
+        "avg_style_rating":0.6768571429,
+        "total_style_reviews":43,
+        "beer_count":35,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":110,
+        "style_name":"Wild Ale",
+        "avg_style_rating":0.8017391304,
+        "total_style_reviews":13,
+        "beer_count":23,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    },
+    {
+        "style_id":111,
+        "style_name":"Winter Warmer",
+        "avg_style_rating":0.6738888889,
+        "total_style_reviews":23,
+        "beer_count":36,
+        "recorded_month":"2025-05-01T00:00:00.000"
+    }
+]
